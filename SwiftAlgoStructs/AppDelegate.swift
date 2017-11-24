@@ -16,28 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        
-        let intArr1 = [11, 3,  5, 7, 2, 10]
-        
-//        let founded = binarySearch(inArray: intArr1, forElement: 5)
-        
-//        let sortedInsertion = insertionSort(array: intArr1)
-        
-//        let sortedBubble = bubbleSort(array: intArr1)
-        
-//        let sortedSelection = selectioinSort(array: intArr1)
-        
-//        let sortedQuick = quickSort(array: intArr1)
-        
-        let linkedList = LinkedList<Int>()
-        
-        let numberList = [8, 2, 10, 9, 7, 5]
-        
-        for number in numberList {
-            linkedList.append(element: number)
-        }
-        
-        linkedList.printAllKeys()
+
         
         
         return true
