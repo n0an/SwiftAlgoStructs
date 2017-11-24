@@ -27,10 +27,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 //        let sortedSelection = selectioinSort(array: intArr1)
         
-        let sortedQuick = quickSort(array: intArr1)
+//        let sortedQuick = quickSort(array: intArr1)
+        
+        let linkedList = LinkedList<Int>()
+        
+        let numberList = [8, 2, 10, 9, 7, 5]
+        
+        for number in numberList {
+            linkedList.append(element: number)
+        }
+        
+        linkedList.printAllKeys()
+        
         
         return true
     }
+    
+    
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
