@@ -18,7 +18,7 @@
 		188760A11FC894FB00567042 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188760A01FC894FB00567042 /* TrieNode.swift */; };
 		188760B11FC8965100567042 /* TrieTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188760B01FC8965100567042 /* TrieTest.swift */; };
 		188760B31FC8984200567042 /* LinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188760B21FC8984200567042 /* LinkedListTest.swift */; };
-		188760B61FC8B38800567042 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188760B41FC8B33300567042 /* Stack.swift */; };
+		18B2AC2A1FC955DC00ECFF31 /* StackLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC291FC955DC00ECFF31 /* StackLinkedList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,7 @@
 		188760AA1FC8962900567042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		188760B01FC8965100567042 /* TrieTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieTest.swift; sourceTree = "<group>"; };
 		188760B21FC8984200567042 /* LinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTest.swift; sourceTree = "<group>"; };
-		188760B41FC8B33300567042 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		18B2AC291FC955DC00ECFF31 /* StackLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackLinkedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +93,7 @@
 				1887609E1FC88B5900567042 /* Trie.swift */,
 				188760A01FC894FB00567042 /* TrieNode.swift */,
 				159F83AA1FC82607006D1845 /* LinkedList.swift */,
-				188760B41FC8B33300567042 /* Stack.swift */,
+				18B2AC291FC955DC00ECFF31 /* StackLinkedList.swift */,
 				18555E581FC6063900C2293C /* AppDelegate.swift */,
 				18555E5A1FC6063900C2293C /* ViewController.swift */,
 				18555E5C1FC6063900C2293C /* Main.storyboard */,
@@ -218,8 +218,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1887609F1FC88B5900567042 /* Trie.swift in Sources */,
+				18B2AC2A1FC955DC00ECFF31 /* StackLinkedList.swift in Sources */,
 				188760A11FC894FB00567042 /* TrieNode.swift in Sources */,
-				188760B61FC8B38800567042 /* Stack.swift in Sources */,
 				18555E6B1FC606CE00C2293C /* Sorting.swift in Sources */,
 				18555E5B1FC6063900C2293C /* ViewController.swift in Sources */,
 				159F83AB1FC82607006D1845 /* LinkedList.swift in Sources */,
