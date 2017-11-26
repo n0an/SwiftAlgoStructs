@@ -24,6 +24,8 @@
 		18B2AC321FCAAE2F00ECFF31 /* StackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC311FCAAE2F00ECFF31 /* StackTest.swift */; };
 		18B2AC341FCAAFFE00ECFF31 /* StackTestBishop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC331FCAAFFE00ECFF31 /* StackTestBishop.swift */; };
 		18B2AC391FCAB50E00ECFF31 /* QueueTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC381FCAB50E00ECFF31 /* QueueTest.swift */; };
+		18B2AC3B1FCAB60600ECFF31 /* QueuePrinceton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC3A1FCAB60600ECFF31 /* QueuePrinceton.swift */; };
+		18B2AC3F1FCAB9B200ECFF31 /* QueueTestSAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC3E1FCAB9B200ECFF31 /* QueueTestSAC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		18B2AC311FCAAE2F00ECFF31 /* StackTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTest.swift; sourceTree = "<group>"; };
 		18B2AC331FCAAFFE00ECFF31 /* StackTestBishop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTestBishop.swift; sourceTree = "<group>"; };
 		18B2AC381FCAB50E00ECFF31 /* QueueTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueTest.swift; sourceTree = "<group>"; };
+		18B2AC3A1FCAB60600ECFF31 /* QueuePrinceton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueuePrinceton.swift; sourceTree = "<group>"; };
+		18B2AC3E1FCAB9B200ECFF31 /* QueueTestSAC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueTestSAC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 			children = (
 				188760B01FC8965100567042 /* TrieTest.swift */,
 				18B2AC381FCAB50E00ECFF31 /* QueueTest.swift */,
+				18B2AC3E1FCAB9B200ECFF31 /* QueueTestSAC.swift */,
 				188760B21FC8984200567042 /* LinkedListTest.swift */,
 				18B2AC311FCAAE2F00ECFF31 /* StackTest.swift */,
 				18B2AC331FCAAFFE00ECFF31 /* StackTestBishop.swift */,
@@ -131,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				18B2AC2C1FCAA5D700ECFF31 /* Queue.swift */,
+				18B2AC3A1FCAB60600ECFF31 /* QueuePrinceton.swift */,
 			);
 			path = Queue;
 			sourceTree = "<group>";
@@ -264,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B2AC3B1FCAB60600ECFF31 /* QueuePrinceton.swift in Sources */,
 				1887609F1FC88B5900567042 /* Trie.swift in Sources */,
 				18B2AC301FCAA9CE00ECFF31 /* Stack.swift in Sources */,
 				18B2AC2A1FC955DC00ECFF31 /* StackLinkedList.swift in Sources */,
@@ -285,6 +292,7 @@
 				18B2AC321FCAAE2F00ECFF31 /* StackTest.swift in Sources */,
 				18B2AC341FCAAFFE00ECFF31 /* StackTestBishop.swift in Sources */,
 				18B2AC391FCAB50E00ECFF31 /* QueueTest.swift in Sources */,
+				18B2AC3F1FCAB9B200ECFF31 /* QueueTestSAC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -39,7 +39,6 @@ public class StackLinkedList<T> {
     public func push(item: T) {
         let oldFirst = first
         first = LLNodeS(value: item)
-        first?.value = item
         first?.next = oldFirst
         
         counter += 1
