@@ -9,6 +9,9 @@
 import Foundation
 
 // Stack using LinkedList
+
+// *** Princeton Algorithms
+
 public class StackLinkedList<T> {
     
     private class LLNodeS<T> {
