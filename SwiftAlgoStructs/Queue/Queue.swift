@@ -18,9 +18,15 @@ class Queue<T> {
     }
     
     private var top: QueueNode<T>?
+    private var counter = 0
     
     var isEmpty: Bool {
         return top?.key == nil
+    }
+    
+    //the number of items
+    var count: Int {
+        return counter
     }
     
     init() {
@@ -33,6 +39,7 @@ class Queue<T> {
         // trivial case
         guard top?.key != nil else {
             top?.key = key
+            counter += 1
             return
         }
         
@@ -42,17 +49,17 @@ class Queue<T> {
         
         // cyctle through the list
         while current?.next != nil {
-            
             current = current?.next
-            
-            // append new item
-            childToUse.key = key
-            current?.next = childToUse
         }
+        
+        // append new item
+        childToUse.key = key
+        current?.next = childToUse
+        counter += 1
     }
     
     // retrieve items - O(1)
-    func deQueue() -> T? {
+    func dequeue() -> T? {
         
         // determine key instance
         guard top?.key != nil else {
@@ -64,20 +71,16 @@ class Queue<T> {
         
         if let nextItem = top?.next {
             top = nextItem
-            
-        } else {
-            top = QueueNode<T>()
         }
         
-        return queueItem
+        counter -= 1
         
+        return queueItem
     }
     
     func peek() -> T? {
         return top?.key
     }
-    
-    
     
 }
 
