@@ -8,6 +8,8 @@
 
 import Foundation
 
+// *** Bishop
+
 class BSTree<T: Comparable> {
     
     var root = BSNode<T>()
@@ -27,6 +29,9 @@ class BSTree<T: Comparable> {
         
         while let currentKey = current.key {
             
+            // send reference of current item to stack
+            self.push(element: &current)
+
             // check left side
             if key < currentKey {
                 
@@ -57,41 +62,10 @@ class BSTree<T: Comparable> {
                 }
             }
             
-            self.push(element: &current)
         }
         
         self.rebalance()
     }
-    
-    // stack elements for later processing
-    private func push(element: inout BSNode<T>) {
-        elementStack.push(key: element)
-    }
-    
-    // determine height and balance
-    private func rebalance() {
-        
-        for _ in stride(from: elementStack.count, through: 1, by: -1) {
-            
-            // obtain generic stack node - by reference
-            let current = elementStack.peek()
-            
-            guard let bsNode = current.key else {
-                print("No element reference found")
-                continue
-            }
-            
-            setHeight(for: bsNode)
-            rotate(element: bsNode)
-            
-            // remove stacked item
-            elementStack.pop()
-            
-        }
-        
-        
-    }
-    
     
     // equality test - O(log n)
     func contains(key: T) -> Bool {
@@ -128,6 +102,35 @@ class BSTree<T: Comparable> {
         return false
     }
     
+    // stack elements for later processing
+    private func push(element: inout BSNode<T>) {
+        elementStack.push(key: element)
+        print("the stack count is: \(elementStack.count)")
+    }
+    
+    // determine height and balance
+    private func rebalance() {
+        
+        for _ in stride(from: elementStack.count, through: 1, by: -1) {
+            
+            // obtain generic stack node - by reference
+            let current = elementStack.peek()
+            
+            guard let bsNode = current.key else {
+                print("No element reference found")
+                continue
+            }
+            
+            setHeight(for: bsNode)
+            rotate(element: bsNode)
+            
+            // remove stacked item
+            elementStack.pop()
+        }
+    }
+    
+    
+    // MARK: - HIGHT METHODS
     private func findHeight(of element: BSNode<T>?) -> Int {
         
         // check empty leaves
@@ -149,6 +152,9 @@ class BSTree<T: Comparable> {
     }
     
     
+    
+    //MARK: - BALANCING METHODS
+    //determine if the tree is "balanced" - operations on a balanced tree is O(log n)
     func isTreeBalanced(for element: BSNode<T>?) -> Bool {
         
         guard element?.key != nil else {
@@ -167,6 +173,16 @@ class BSTree<T: Comparable> {
     // perform left or right rotation
     private func rotate(element: BSNode<T>) {
         
+        guard element.key != nil else {
+            print("cannot rotate: no key provided..")
+            return
+        }
+        
+        if (self.isTreeBalanced(for: element) == true) {
+            print("node: \(element.key!) already balanced..")
+            return
+        }
+        
         // create new element
         let childToUse = BSNode<T>()
         childToUse.height = 0
@@ -178,22 +194,46 @@ class BSTree<T: Comparable> {
         
         if rightSide > 1 {
             
-            // reset the root node
+            print("\n starting right rotation on \(element.key!)..")
+            
+            //reset the root node
             element.key = element.left?.key
             element.height = findHeight(of: element.left)
             
-            // assign the new right node
+            
+            //assign the new right node
             element.right = childToUse
             
-            // adjust the left node
+            
+            //adjust the left node
             element.left = element.left?.left
             element.left?.height = 0
+            
+            print("root is: \(element.key!) | left is : \(element.left!.key!) | right is : \(element.right!.key!)..")
+        }
+            
+        else if leftSide > 1 {
+            
+            print("\n starting left rotation on \(element.key!)..")
+            
+            //reset the root node
+            element.key = element.right?.key
+            element.height = findHeight(of: element.right)
+            
+            
+            //assign the new left node
+            element.left = childToUse
+            
+            
+            //adjust the right node
+            element.right = element.right?.right
+            element.right?.height = 0
+            
+            print("root is: \(element.key!) | left is : \(element.left!.key!) | right is : \(element.right!.key!)..")
+            
         }
         
     }
-    
-    
-    
     
 }
 

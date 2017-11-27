@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		159F83AB1FC82607006D1845 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159F83AA1FC82607006D1845 /* LinkedList.swift */; };
+		1836F8791FCC9BDA00794C9D /* BSTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1836F8781FCC9BDA00794C9D /* BSTest.swift */; };
 		18555E591FC6063900C2293C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18555E581FC6063900C2293C /* AppDelegate.swift */; };
 		18555E5B1FC6063900C2293C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18555E5A1FC6063900C2293C /* ViewController.swift */; };
 		18555E5E1FC6063900C2293C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18555E5C1FC6063900C2293C /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		159F83AA1FC82607006D1845 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		1836F8781FCC9BDA00794C9D /* BSTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTest.swift; sourceTree = "<group>"; };
 		18555E551FC6063900C2293C /* SwiftAlgoStructs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAlgoStructs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18555E581FC6063900C2293C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18555E5A1FC6063900C2293C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				188760B01FC8965100567042 /* TrieTest.swift */,
+				1836F8781FCC9BDA00794C9D /* BSTest.swift */,
 				18B2AC381FCAB50E00ECFF31 /* QueueTest.swift */,
 				18B2AC3E1FCAB9B200ECFF31 /* QueueTestSAC.swift */,
 				188760B21FC8984200567042 /* LinkedListTest.swift */,
@@ -306,6 +309,7 @@
 				188760B31FC8984200567042 /* LinkedListTest.swift in Sources */,
 				188760B11FC8965100567042 /* TrieTest.swift in Sources */,
 				18B2AC321FCAAE2F00ECFF31 /* StackTest.swift in Sources */,
+				1836F8791FCC9BDA00794C9D /* BSTest.swift in Sources */,
 				18B2AC341FCAAFFE00ECFF31 /* StackTestBishop.swift in Sources */,
 				18B2AC391FCAB50E00ECFF31 /* QueueTest.swift in Sources */,
 				18B2AC3F1FCAB9B200ECFF31 /* QueueTestSAC.swift in Sources */,
