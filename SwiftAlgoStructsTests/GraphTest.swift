@@ -75,16 +75,18 @@ class GraphTest: XCTestCase {
     }
     
     //MARK: Closures and traversals
-    /*
+    
     //breadth-first search
     func testBFSTraverse() {
-        testGraph.traverse(vertexA)
+        testGraph.traverse(startingVertex: vertexA)
     }
     
+    /*
     //breadth-first search with function
     func testBFSTraverseFunction() {
         testGraph.traverse(vertexA, formula: traverseFormula)
     }
+    
     
     //breadth-first search with closure expression
     func testBFSTraverseExpression() {

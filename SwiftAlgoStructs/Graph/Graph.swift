@@ -234,4 +234,49 @@ public class Graph {
         
     }
     
+    // breadth first search traverse
+    func traverse(startingVertex: Vertex) {
+        
+        // establish a new queue
+        let graphQueue = Queue<Vertex>()
+        
+        // queue a starting vertex
+        graphQueue.enqueue(key: startingVertex)
+        
+        while !graphQueue.isEmpty {
+            
+            // traverse the next queued vertex
+            guard let vItem = graphQueue.dequeue() else {
+                return
+            }
+            
+            // add unvisited vertices to the queue
+            for edge in vItem.neighbors {
+                if !edge.neighbor.visited {
+                    print("adding vertex: \(edge.neighbor.key!) to queue...")
+                    graphQueue.enqueue(key: edge.neighbor)
+                }
+            }
+            
+            vItem.visited = true
+            print("traversed vertex: \(vItem.key!)...")
+        }
+        print("graph traversal completed")
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

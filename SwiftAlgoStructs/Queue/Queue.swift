@@ -71,6 +71,8 @@ class Queue<T> {
         
         if let nextItem = top?.next {
             top = nextItem
+        } else {
+            top = QueueNode<T>()
         }
         
         counter -= 1
