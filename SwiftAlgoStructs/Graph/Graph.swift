@@ -8,19 +8,17 @@
 
 import Foundation
 
+// *** Bishop
+
 public class Graph {
     
     // declare graph canvas
     private var canvas: Array<Vertex>
     public var isDirected: Bool
     
-   
-    
     init() {
         self.canvas = Array<Vertex>()
         isDirected = true
-        
-        
     }
     
     // create a new vertex
@@ -47,7 +45,7 @@ public class Graph {
         newEdge.weight = weight
         source.neighbors.append(newEdge)
         
-        print("The neighbor of vertex: \(source.key as String!) is \(neighbor.key as String!)..")
+        print("The neighbor of vertex: \(source.key ?? "nil") is \(neighbor.key ?? "nil")..")
         
         // check condition for an unidirected graph
         if !isDirected {
@@ -60,10 +58,43 @@ public class Graph {
             reversedEdge.weight = weight
             neighbor.neighbors.append(reversedEdge)
             
-            print("The neighbor of vertex: \(neighbor.key as String!) is \(source.key as String!)..")
+            print("The neighbor of vertex: \(neighbor.key ?? "nil") is \(source.key ?? "nil")..")
 
         }
+    }
+    
+    // reverse the sequence of paths given the shortest path. process analagous to reversing a linked list.
+    
+    func reversePath(_ head: Path!, source: Vertex) -> Path! {
         
+        guard head != nil else {
+            return head
+        }
+        
+        //mutated copy
+        var output = head
+        
+        var current: Path! = output
+        var prev: Path!
+        var next: Path!
+        
+        while(current != nil) {
+            next = current.previous
+            current.previous = prev
+            prev = current
+            current = next
+        }
+        
+        //append the source path to the sequence
+        let sourcePath: Path = Path()
+        
+        sourcePath.destination = source
+        sourcePath.previous = prev
+        sourcePath.total = 0
+        
+        output = sourcePath
+        
+        return output
     }
     
     // Optimized version of Dijkstra's shortest path algorithm
@@ -148,8 +179,6 @@ public class Graph {
         return shortestPath
     }
     
-    
-    
     // Dijkstra's shortest path algorithm
     func processDijkstraWithHeap(source: Vertex, destination: Vertex) -> Path? {
 
@@ -205,25 +234,4 @@ public class Graph {
         
     }
     
-    
-    
-    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

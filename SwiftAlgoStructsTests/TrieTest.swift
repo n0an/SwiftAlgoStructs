@@ -11,6 +11,8 @@ import XCTest
 
 @testable import SwiftAlgoStructs
 
+// *** Bishop + Bishop Tests
+
 class TrieTest: XCTestCase {
     
     var testTrie = Trie()
@@ -28,7 +30,6 @@ class TrieTest: XCTestCase {
         testTrie.append(keyword: "Bat")
         testTrie.append(keyword: "Bar")
     }
-    
     
     
     /*
