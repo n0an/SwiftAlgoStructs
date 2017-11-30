@@ -17,3 +17,9 @@ public class Vertex {
         self.neighbors = Array<Edge>()
     }
 }
+
+extension Vertex: Keyable {
+    var keystring: String {
+        return self.key!
+    }
+}

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15697DB61FCFF6B100138108 /* HashNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15697DB51FCFF6B100138108 /* HashNode.swift */; };
+		15697DB81FCFF6DA00138108 /* HashTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15697DB71FCFF6DA00138108 /* HashTable.swift */; };
+		15697DBA1FCFF8C100138108 /* String+Keyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15697DB91FCFF8C100138108 /* String+Keyable.swift */; };
+		15697DBC1FD003F500138108 /* HashTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15697DBB1FD003F500138108 /* HashTest.swift */; };
+		15697DBE1FD0046700138108 /* Double+Keyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15697DBD1FD0046700138108 /* Double+Keyable.swift */; };
 		159F83AB1FC82607006D1845 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159F83AA1FC82607006D1845 /* LinkedList.swift */; };
 		182C113A1FCF16B9001B462A /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C11391FCF16B9001B462A /* Vertex.swift */; };
 		182C113C1FCF1737001B462A /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C113B1FCF1737001B462A /* Edge.swift */; };
@@ -49,6 +54,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15697DB51FCFF6B100138108 /* HashNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashNode.swift; sourceTree = "<group>"; };
+		15697DB71FCFF6DA00138108 /* HashTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTable.swift; sourceTree = "<group>"; };
+		15697DB91FCFF8C100138108 /* String+Keyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Keyable.swift"; sourceTree = "<group>"; };
+		15697DBB1FD003F500138108 /* HashTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTest.swift; sourceTree = "<group>"; };
+		15697DBD1FD0046700138108 /* Double+Keyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Keyable.swift"; sourceTree = "<group>"; };
 		159F83AA1FC82607006D1845 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		182C11391FCF16B9001B462A /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
 		182C113B1FCF1737001B462A /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
@@ -152,6 +162,10 @@
 				1836F8771FCBFA4F00794C9D /* BST */,
 				182C113D1FCF1759001B462A /* Graph */,
 				18555E6A1FC606CD00C2293C /* Sorting.swift */,
+				15697DB51FCFF6B100138108 /* HashNode.swift */,
+				15697DB71FCFF6DA00138108 /* HashTable.swift */,
+				15697DB91FCFF8C100138108 /* String+Keyable.swift */,
+				15697DBD1FD0046700138108 /* Double+Keyable.swift */,
 				18555E581FC6063900C2293C /* AppDelegate.swift */,
 				18555E5A1FC6063900C2293C /* ViewController.swift */,
 				18555E5C1FC6063900C2293C /* Main.storyboard */,
@@ -166,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				182C11481FCF3B8B001B462A /* GraphTest.swift */,
+				15697DBB1FD003F500138108 /* HashTest.swift */,
 				188760B01FC8965100567042 /* TrieTest.swift */,
 				1836F8781FCC9BDA00794C9D /* BSTest.swift */,
 				18B2AC381FCAB50E00ECFF31 /* QueueTest.swift */,
@@ -318,9 +333,13 @@
 			files = (
 				18B2AC3B1FCAB60600ECFF31 /* QueuePrinceton.swift in Sources */,
 				1887609F1FC88B5900567042 /* Trie.swift in Sources */,
+				15697DB81FCFF6DA00138108 /* HashTable.swift in Sources */,
 				182C11411FCF1B18001B462A /* Path.swift in Sources */,
 				182C113C1FCF1737001B462A /* Edge.swift in Sources */,
+				15697DB61FCFF6B100138108 /* HashNode.swift in Sources */,
+				15697DBE1FD0046700138108 /* Double+Keyable.swift in Sources */,
 				18B2AC301FCAA9CE00ECFF31 /* Stack.swift in Sources */,
+				15697DBA1FCFF8C100138108 /* String+Keyable.swift in Sources */,
 				18B2AC2A1FC955DC00ECFF31 /* StackLinkedList.swift in Sources */,
 				18C55D3C1FCBECC700870A51 /* BSTree.swift in Sources */,
 				188760A11FC894FB00567042 /* TrieNode.swift in Sources */,
@@ -341,6 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15697DBC1FD003F500138108 /* HashTest.swift in Sources */,
 				188760B31FC8984200567042 /* LinkedListTest.swift in Sources */,
 				188760B11FC8965100567042 /* TrieTest.swift in Sources */,
 				18B2AC321FCAAE2F00ECFF31 /* StackTest.swift in Sources */,
