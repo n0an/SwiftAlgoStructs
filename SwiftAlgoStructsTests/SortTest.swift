@@ -12,7 +12,7 @@ import GameKit
 
 @testable import SwiftAlgoStructs
 
-class SortTest:XCTestCase {
+class SortTest:XCTestCase, Sortable {
     
     //test input types for algorithms
     var numberList = [8, 2, 10, 9, 7, 5]
@@ -34,43 +34,68 @@ class SortTest:XCTestCase {
     
     func testQuickSort() {
         
-        // *** Without diplicates
-        let arr = Array(1...10000)
+        let arr = Array(1...1000)
         
-        let shuffledArray = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: arr)
-        
-//        let shuffledArray = arr
+        let shuffledArray = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: arr) as! [Int]
         
         let start = Date()
         
         print("Start to sort")
         
-        quickSort(array: shuffledArray as! [Int])
+        let sortedArr = quickSort(array: shuffledArray)
+        
         print("shuffled")
         
         let timePassed = Date().timeIntervalSince(start)
         
         print("timePassed = \(timePassed)")
         
-        // *** With duplicates
-        //        let arrWithDuplicates = Array<Int>(repeating: 100, count: 900)
-        //        let arrNonDuplicates = Array(101...200)
-        //
-        //        let arr = arrWithDuplicates + arrNonDuplicates
-        //
-        //        let shuffledArray = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: arr)
-        //
-        //        let start = Date()
-        //
-        //        print("Start to sort")
-        //
-        //
-        //        quickSort(array: shuffledArray as! [Int])
-        //        print("shuffled")
-        //
-        //        let timePassed = Date().timeIntervalSince(start)
-        //
-        //        print("timePassed = \(timePassed)")
+        XCTAssertTrue(isSorted(sortedArr))
+        
+    }
+    
+    func testQuickSortWithDuplicates() {
+        
+        let arrWithDuplicates = Array<Int>(repeating: 100, count: 900)
+        let arrNonDuplicates = Array(101...200)
+        
+        let arr = arrWithDuplicates + arrNonDuplicates
+        //        let arr = arrWithDuplicates
+        
+        let shuffledArray = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: arr) as! [Int]
+        
+        let start = Date()
+        
+        print("Start to sort")
+        
+        let sortedArr = quickSort(array: shuffledArray)
+        
+        print("shuffled")
+        
+        let timePassed = Date().timeIntervalSince(start)
+        
+        print("timePassed = \(timePassed)")
+        
+        XCTAssertTrue(isSorted(sortedArr))
+        
+    }
+    
+    func testQuickSortAlreadySortedArray() {
+        let arr = Array(1...100000)
+        
+        let start = Date()
+        
+        print("Start to sort")
+        
+        let sortedArr = quickSort(array: arr)
+        
+        print("shuffled")
+        
+        let timePassed = Date().timeIntervalSince(start)
+        
+        print("timePassed = \(timePassed)")
+        
+        XCTAssertTrue(isSorted(sortedArr))
     }
     
 }

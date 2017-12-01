@@ -29,7 +29,7 @@ public class Quick {
     
     private static func partition(arr: inout [Int], lo: Int, hi: Int) -> Int {
         
-        var i = lo + 1
+        var i = lo
         var j = hi
         
         mainLoop: while true {
@@ -58,8 +58,6 @@ public class Quick {
         
         return j
     }
-    
-    
     
 }
 
