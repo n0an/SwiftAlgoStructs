@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		155940701FD14EAF00EFBDCD /* Keyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1559406F1FD14EAF00EFBDCD /* Keyable.swift */; };
+		155940741FD1647100EFBDCD /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155940731FD1647100EFBDCD /* Enums.swift */; };
 		15697DB61FCFF6B100138108 /* HashNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15697DB51FCFF6B100138108 /* HashNode.swift */; };
 		15697DB81FCFF6DA00138108 /* HashTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15697DB71FCFF6DA00138108 /* HashTable.swift */; };
 		15697DBA1FCFF8C100138108 /* String+Keyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15697DB91FCFF8C100138108 /* String+Keyable.swift */; };
@@ -84,6 +85,7 @@
 
 /* Begin PBXFileReference section */
 		1559406F1FD14EAF00EFBDCD /* Keyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyable.swift; sourceTree = "<group>"; };
+		155940731FD1647100EFBDCD /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		15697DB51FCFF6B100138108 /* HashNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashNode.swift; sourceTree = "<group>"; };
 		15697DB71FCFF6DA00138108 /* HashTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTable.swift; sourceTree = "<group>"; };
 		15697DB91FCFF8C100138108 /* String+Keyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Keyable.swift"; sourceTree = "<group>"; };
@@ -261,6 +263,7 @@
 		188760A71FC8962900567042 /* SwiftAlgoStructsTests */ = {
 			isa = PBXGroup;
 			children = (
+				155940731FD1647100EFBDCD /* Enums.swift */,
 				1843B25C1FD13F1800E9C7E3 /* Sortable.swift */,
 				182C11481FCF3B8B001B462A /* GraphTest.swift */,
 				15697DBB1FD003F500138108 /* HashTest.swift */,
@@ -505,6 +508,7 @@
 				1843B2581FD13DE800E9C7E3 /* SortPrincetonTest.swift in Sources */,
 				1843B25D1FD13F1800E9C7E3 /* Sortable.swift in Sources */,
 				18B2AC321FCAAE2F00ECFF31 /* StackTest.swift in Sources */,
+				155940741FD1647100EFBDCD /* Enums.swift in Sources */,
 				1836F8791FCC9BDA00794C9D /* BSTest.swift in Sources */,
 				182C114A1FCF3BB1001B462A /* GraphTest.swift in Sources */,
 				18B2AC341FCAAFFE00ECFF31 /* StackTestBishop.swift in Sources */,

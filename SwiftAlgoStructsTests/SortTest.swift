@@ -27,6 +27,8 @@ class SortTest:XCTestCase, Sortable {
     var triviaTextList = ["Dog"]
     var emptyTextList: Array<String> = []
     
+    let duplicatesRatio = 0.999
+    
     override func setUp() {
         super.setUp()
         
@@ -34,9 +36,9 @@ class SortTest:XCTestCase, Sortable {
     
     func testQuickSort() {
         
-        let arr = Array(1...1000)
-        
-        let shuffledArray = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: arr) as! [Int]
+        let arrayToSort = Array(1...ArraySize.k1.rawValue)
+
+        let shuffledArray = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: arrayToSort) as! [Int]
         
         let start = Date()
         
@@ -51,16 +53,23 @@ class SortTest:XCTestCase, Sortable {
         print("timePassed = \(timePassed)")
         
         XCTAssertTrue(isSorted(sortedArr))
+        
+        // O(n log n)
+        // 1000     - 0.008
+        // 10000    - 0.083
+        // 100000   - 0.956
+        // 1000000  - 11.570
         
     }
     
     func testQuickSortWithDuplicates() {
         
-        let arrWithDuplicates = Array<Int>(repeating: 100, count: 900)
-        let arrNonDuplicates = Array(101...200)
+        let arraySize = ArraySize.k2.rawValue
+        
+        let arrWithDuplicates = Array<Int>(repeating: 100, count: Int(Double(arraySize) * duplicatesRatio))
+        let arrNonDuplicates = Array(101...100 + arraySize - arrWithDuplicates.count)
         
         let arr = arrWithDuplicates + arrNonDuplicates
-        //        let arr = arrWithDuplicates
         
         let shuffledArray = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: arr) as! [Int]
         
@@ -78,11 +87,16 @@ class SortTest:XCTestCase, Sortable {
         
         XCTAssertTrue(isSorted(sortedArr))
         
+        // O(n²)
+        // 1000     - 0.089
+        // 2000     - 0.425
+        // 10000    - 8.796
+        
     }
     
     func testQuickSortAlreadySortedArray() {
-        let arr = Array(1...1000)
-        
+        let arr = Array(1...ArraySize.k1.rawValue)
+
         let start = Date()
         
         print("Start to sort")
@@ -96,6 +110,12 @@ class SortTest:XCTestCase, Sortable {
         print("timePassed = \(timePassed)")
         
         XCTAssertTrue(isSorted(sortedArr))
+        
+        // O(n²)
+        // 1000     - 0.131
+        // 2000     - 0.398
+        // 10000    - 8.918
+        
     }
     
 }
