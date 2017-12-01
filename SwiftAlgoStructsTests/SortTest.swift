@@ -27,7 +27,7 @@ class SortTest:XCTestCase, Sortable {
     var triviaTextList = ["Dog"]
     var emptyTextList: Array<String> = []
     
-    let duplicatesRatio = 0.999
+    let duplicatesRatio = 1.0
     
     override func setUp() {
         super.setUp()
@@ -56,9 +56,9 @@ class SortTest:XCTestCase, Sortable {
         
         // O(n log n)
         // 1000     - 0.008
-        // 10000    - 0.083
-        // 100000   - 0.956
-        // 1000000  - 11.570
+        // 10_000    - 0.083
+        // 100_000   - 0.956
+        // 1_000_000  - 11.570
         
     }
     
@@ -67,7 +67,11 @@ class SortTest:XCTestCase, Sortable {
         let arraySize = ArraySize.k2.rawValue
         
         let arrWithDuplicates = Array<Int>(repeating: 100, count: Int(Double(arraySize) * duplicatesRatio))
-        let arrNonDuplicates = Array(101...100 + arraySize - arrWithDuplicates.count)
+        
+        var arrNonDuplicates = [Int]()
+        if duplicatesRatio != 1.0 {
+            arrNonDuplicates = Array(101...100 + arraySize - arrWithDuplicates.count)
+        }
         
         let arr = arrWithDuplicates + arrNonDuplicates
         
@@ -90,7 +94,7 @@ class SortTest:XCTestCase, Sortable {
         // O(n²)
         // 1000     - 0.089
         // 2000     - 0.425
-        // 10000    - 8.796
+        // 10_000    - 8.796
         
     }
     
@@ -114,7 +118,7 @@ class SortTest:XCTestCase, Sortable {
         // O(n²)
         // 1000     - 0.131
         // 2000     - 0.398
-        // 10000    - 8.918
+        // 10_000    - 8.918
         
     }
     

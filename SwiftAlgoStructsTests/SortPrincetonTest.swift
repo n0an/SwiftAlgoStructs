@@ -16,7 +16,7 @@ import GameKit
 
 class SortPrincetonTest:XCTestCase, Sortable {
     
-    let duplicatesRatio = 0.999
+    let duplicatesRatio = 1.0
     
     override func setUp() {
         super.setUp()
@@ -45,9 +45,9 @@ class SortPrincetonTest:XCTestCase, Sortable {
         
         // O(n log n)
         // 1000     - 0.006
-        // 10000    - 0.006
-        // 100000   - 0.617
-        // 1000000  - 7.23
+        // 10_000    - 0.006
+        // 100_000   - 0.617
+        // 1_000_000  - 7.23
         
     }
     
@@ -56,7 +56,11 @@ class SortPrincetonTest:XCTestCase, Sortable {
         let arraySize = ArraySize.k10.rawValue
         
         let arrWithDuplicates = Array<Int>(repeating: 100, count: Int(Double(arraySize) * duplicatesRatio))
-        let arrNonDuplicates = Array(101...100 + arraySize - arrWithDuplicates.count)
+        
+        var arrNonDuplicates = [Int]()
+        if duplicatesRatio != 1.0 {
+            arrNonDuplicates = Array(101...100 + arraySize - arrWithDuplicates.count)
+        }
         
         let arr = arrWithDuplicates + arrNonDuplicates
 
@@ -78,9 +82,9 @@ class SortPrincetonTest:XCTestCase, Sortable {
         
         // O(n log n) ?? should be quadratic ?
         // 1000     - 0.008
-        // 10000    - 0.09
-        // 100000   - 0.754
-        // 1000000  - 8.784
+        // 10_000    - 0.09
+        // 100_000   - 0.754
+        // 1_000_000  - 8.784
     }
     
     func testQuickSortAlreadySortedArray() {
@@ -102,8 +106,8 @@ class SortPrincetonTest:XCTestCase, Sortable {
         
         // O(n²)
         // 1000     - 0.116
-        // 10000    - 8.549
-        // 20000    - 33.911
+        // 10_000    - 8.549
+        // 20_000    - 33.911
         
     }
     

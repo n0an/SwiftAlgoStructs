@@ -65,9 +65,11 @@ public class Quick {
                 
             }
             
+//            print("swapping a[i] and a[j] = \(arr[i], arr[j])")
             arr.swapAt(i, j)
         }
         
+//        print("final swap a[lo] and a[j] = \(arr[lo], arr[j])")
         arr.swapAt(lo, j)
         
         return j
