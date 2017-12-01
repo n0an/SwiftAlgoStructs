@@ -80,7 +80,7 @@ class SortPrincetonTest:XCTestCase, Sortable {
         
         XCTAssertTrue(isSorted(sortedArr))
         
-        // O(n log n) ?? should be quadratic ?
+        // O(n log n)
         // 1000     - 0.008
         // 10_000    - 0.09
         // 100_000   - 0.754
