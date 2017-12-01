@@ -23,7 +23,6 @@
 		182C11451FCF39CD001B462A /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C11441FCF39CD001B462A /* Heap.swift */; };
 		182C114A1FCF3BB1001B462A /* GraphTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C11481FCF3B8B001B462A /* GraphTest.swift */; };
 		1836F8791FCC9BDA00794C9D /* BSTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1836F8781FCC9BDA00794C9D /* BSTest.swift */; };
-		1843B24A1FD1383900E9C7E3 /* PrincetonCoursera.h in Headers */ = {isa = PBXBuildFile; fileRef = 1843B2481FD1383900E9C7E3 /* PrincetonCoursera.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1843B24D1FD1383900E9C7E3 /* PrincetonCoursera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1843B2461FD1383900E9C7E3 /* PrincetonCoursera.framework */; };
 		1843B24E1FD1383900E9C7E3 /* PrincetonCoursera.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1843B2461FD1383900E9C7E3 /* PrincetonCoursera.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1843B2541FD1385A00E9C7E3 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843B2531FD1385A00E9C7E3 /* QuickSort.swift */; };
@@ -40,6 +39,7 @@
 		188760A11FC894FB00567042 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188760A01FC894FB00567042 /* TrieNode.swift */; };
 		188760B11FC8965100567042 /* TrieTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188760B01FC8965100567042 /* TrieTest.swift */; };
 		188760B31FC8984200567042 /* LinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188760B21FC8984200567042 /* LinkedListTest.swift */; };
+		18902B691FD1BA1E006830A5 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902B681FD1BA1E006830A5 /* Array.swift */; };
 		18B2AC2A1FC955DC00ECFF31 /* StackLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC291FC955DC00ECFF31 /* StackLinkedList.swift */; };
 		18B2AC2D1FCAA5D700ECFF31 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC2C1FCAA5D700ECFF31 /* Queue.swift */; };
 		18B2AC301FCAA9CE00ECFF31 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC2F1FCAA9CE00ECFF31 /* Stack.swift */; };
@@ -101,7 +101,6 @@
 		182C11481FCF3B8B001B462A /* GraphTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTest.swift; sourceTree = "<group>"; };
 		1836F8781FCC9BDA00794C9D /* BSTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTest.swift; sourceTree = "<group>"; };
 		1843B2461FD1383900E9C7E3 /* PrincetonCoursera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PrincetonCoursera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1843B2481FD1383900E9C7E3 /* PrincetonCoursera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrincetonCoursera.h; sourceTree = "<group>"; };
 		1843B2491FD1383900E9C7E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1843B2531FD1385A00E9C7E3 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 		1843B2551FD1387600E9C7E3 /* SortTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortTest.swift; sourceTree = "<group>"; };
@@ -121,6 +120,7 @@
 		188760AA1FC8962900567042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		188760B01FC8965100567042 /* TrieTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieTest.swift; sourceTree = "<group>"; };
 		188760B21FC8984200567042 /* LinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTest.swift; sourceTree = "<group>"; };
+		18902B681FD1BA1E006830A5 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		18B2AC291FC955DC00ECFF31 /* StackLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackLinkedList.swift; sourceTree = "<group>"; };
 		18B2AC2C1FCAA5D700ECFF31 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		18B2AC2F1FCAA9CE00ECFF31 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
@@ -164,6 +164,7 @@
 			children = (
 				15697DBD1FD0046700138108 /* Double+Keyable.swift */,
 				15697DB91FCFF8C100138108 /* String+Keyable.swift */,
+				18902B681FD1BA1E006830A5 /* Array.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -210,7 +211,6 @@
 		1843B2471FD1383900E9C7E3 /* PrincetonCoursera */ = {
 			isa = PBXGroup;
 			children = (
-				1843B2481FD1383900E9C7E3 /* PrincetonCoursera.h */,
 				1843B2531FD1385A00E9C7E3 /* QuickSort.swift */,
 				1843B2491FD1383900E9C7E3 /* Info.plist */,
 			);
@@ -323,7 +323,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1843B24A1FD1383900E9C7E3 /* PrincetonCoursera.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +491,7 @@
 				18555E6B1FC606CE00C2293C /* Sorting.swift in Sources */,
 				18555E5B1FC6063900C2293C /* ViewController.swift in Sources */,
 				159F83AB1FC82607006D1845 /* LinkedList.swift in Sources */,
+				18902B691FD1BA1E006830A5 /* Array.swift in Sources */,
 				18C55D3A1FCBEBB300870A51 /* BSNode.swift in Sources */,
 				18555E591FC6063900C2293C /* AppDelegate.swift in Sources */,
 			);

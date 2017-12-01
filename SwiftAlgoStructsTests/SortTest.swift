@@ -34,18 +34,30 @@ class SortTest:XCTestCase, Sortable {
         
     }
     
+    func testQuickSortDifferentTypesArrays() {
+        
+        XCTAssertTrue(isSorted(numberList.quickSort()))
+        XCTAssertTrue(isSorted(trivialNumberList.quickSort()))
+        XCTAssertTrue(isSorted(emptyNumberList.quickSort()))
+        XCTAssertTrue(isSorted(textList.quickSort()))
+        XCTAssertTrue(isSorted(triviaTextList.quickSort()))
+        XCTAssertTrue(isSorted(emptyTextList.quickSort()))
+        
+    }
+    
     func testQuickSort() {
         
-        let arrayToSort = Array(1...ArraySize.k1.rawValue)
+        let arrayToSort = Array(1...ArraySize.k10.rawValue)
 
-        let shuffledArray = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: arrayToSort) as! [Int]
+        var shuffledArray = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: arrayToSort) as! [Int]
         
         let start = Date()
         
         print("Start to sort")
         
-        let sortedArr = quickSort(array: shuffledArray)
-        
+//        let sortedArr = quickSort(array: shuffledArray)
+        let sortedArr = shuffledArray.quickSort()
+
         print("shuffled")
         
         let timePassed = Date().timeIntervalSince(start)
@@ -64,7 +76,7 @@ class SortTest:XCTestCase, Sortable {
     
     func testQuickSortWithDuplicates() {
         
-        let arraySize = ArraySize.k2.rawValue
+        let arraySize = ArraySize.k10.rawValue
         
         let arrWithDuplicates = Array<Int>(repeating: 100, count: Int(Double(arraySize) * duplicatesRatio))
         
@@ -75,14 +87,14 @@ class SortTest:XCTestCase, Sortable {
         
         let arr = arrWithDuplicates + arrNonDuplicates
         
-        let shuffledArray = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: arr) as! [Int]
+        var shuffledArray = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: arr) as! [Int]
         
         let start = Date()
         
         print("Start to sort")
         
-        let sortedArr = quickSort(array: shuffledArray)
-        
+        let sortedArr = shuffledArray.quickSort()
+
         print("shuffled")
         
         let timePassed = Date().timeIntervalSince(start)
@@ -91,7 +103,7 @@ class SortTest:XCTestCase, Sortable {
         
         XCTAssertTrue(isSorted(sortedArr))
         
-        // O(n²)
+        // O(n log n)
         // 1000     - 0.089
         // 2000     - 0.425
         // 10_000    - 8.796
@@ -99,14 +111,15 @@ class SortTest:XCTestCase, Sortable {
     }
     
     func testQuickSortAlreadySortedArray() {
-        let arr = Array(1...ArraySize.k1.rawValue)
+        var arr = Array(1...ArraySize.k1.rawValue)
 
         let start = Date()
         
         print("Start to sort")
         
-        let sortedArr = quickSort(array: arr)
-        
+//        let sortedArr = quickSort(array: arr)
+        let sortedArr = arr.quickSort()
+
         print("shuffled")
         
         let timePassed = Date().timeIntervalSince(start)
