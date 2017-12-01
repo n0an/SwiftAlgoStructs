@@ -83,7 +83,7 @@ class SortPrincetonTest:XCTestCase, Sortable {
     }
     
     func testQuickSortAlreadySortedArray() {
-        let arr = Array(1...100000)
+        let arr = Array(1...1000)
         
         let start = Date()
         

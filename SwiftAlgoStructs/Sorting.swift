@@ -143,7 +143,7 @@ func selectioinSort(array: [Int]) -> [Int] {
 
 
 /// O(n * log n)
-func quickSort(array: [Int]) -> [Int] {
+func quickSort<T: Comparable>(array: [T]) -> [T] {
     
     var outputArray = array
     
@@ -153,7 +153,7 @@ func quickSort(array: [Int]) -> [Int] {
     
 }
 
-func qSort(array: inout [Int], startIndex: Int, pivotIndex: Int) {
+func qSort<T: Comparable>(array: inout [T], startIndex: Int, pivotIndex: Int) {
     
     if startIndex < pivotIndex {
         
@@ -166,7 +166,7 @@ func qSort(array: inout [Int], startIndex: Int, pivotIndex: Int) {
 }
 
 
-func qPartition(array: inout [Int], startIndex: Int, pivotIndex: Int) -> Int {
+func qPartition<T: Comparable>(array: inout [T], startIndex: Int, pivotIndex: Int) -> Int {
     
     var wallIndex = startIndex
     

@@ -10,13 +10,13 @@ import Foundation
 
 public class Quick {
     
-    public static func sort(arr: [Int]) -> [Int] {
+    public static func sort<T: Comparable>(arr: [T]) -> [T] {
         var outputArray = arr
         sort(arr: &outputArray, lo: 0, hi: arr.count - 1)
         return outputArray
     }
     
-    private static func sort(arr: inout [Int], lo: Int, hi: Int) {
+    private static func sort<T: Comparable>(arr: inout [T], lo: Int, hi: Int) {
         
         guard hi > lo else { return }
         
@@ -27,7 +27,7 @@ public class Quick {
         
     }
     
-    private static func partition(arr: inout [Int], lo: Int, hi: Int) -> Int {
+    private static func partition<T: Comparable>(arr: inout [T], lo: Int, hi: Int) -> Int {
         
         var i = lo
         var j = hi
