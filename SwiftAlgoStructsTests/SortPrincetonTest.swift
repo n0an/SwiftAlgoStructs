@@ -58,7 +58,7 @@ class SortPrincetonTest:XCTestCase, Sortable {
     
     func testQuickSortWithDuplicates() {
 
-        let arrWithDuplicates = Array<Int>(repeating: 100, count: 2)
+        let arrWithDuplicates = Array<Int>(repeating: 100, count: 900)
         let arrNonDuplicates = Array(101...200)
         
         let arr = arrWithDuplicates + arrNonDuplicates

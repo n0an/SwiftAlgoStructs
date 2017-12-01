@@ -29,26 +29,40 @@ public class Quick {
     
     private static func partition<T: Comparable>(arr: inout [T], lo: Int, hi: Int) -> Int {
         
+//        print("------------")
+//        print("entering partition, a[lo] = \(arr[lo])")
+//        print("lo, hi = \(lo, hi)")
+        
         var i = lo
-        var j = hi
+        var j = hi + 1
         
         mainLoop: while true {
-            insideILoop: while arr[i] < arr[lo] {
+            
+            // rewind i
+            insideLoop: repeat {
                 i += 1
                 if i == hi {
-                    break insideILoop
+                    break insideLoop
                 }
-            }
+            } while arr[i] < arr[lo]
+          
+//            print("found a[i] > a[lo] = \(arr[i])")
+//            print("i = \(i)")
             
-            insideJLoop: while arr[j] > arr[lo] {
+            // rewind j
+            insideLoop: repeat {
                 j -= 1
                 if j == lo {
-                    break insideJLoop
+                    break insideLoop
                 }
-            }
+            } while arr[lo] < arr[j]
             
+//            print("found a[j] < a[lo] = \(arr[j])")
+//            print("j = \(j)")
+
             if i >= j {
                 break mainLoop
+                
             }
             
             arr.swapAt(i, j)
