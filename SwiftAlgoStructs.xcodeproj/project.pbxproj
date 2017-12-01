@@ -21,6 +21,13 @@
 		182C11451FCF39CD001B462A /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C11441FCF39CD001B462A /* Heap.swift */; };
 		182C114A1FCF3BB1001B462A /* GraphTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C11481FCF3B8B001B462A /* GraphTest.swift */; };
 		1836F8791FCC9BDA00794C9D /* BSTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1836F8781FCC9BDA00794C9D /* BSTest.swift */; };
+		1843B24A1FD1383900E9C7E3 /* PrincetonCoursera.h in Headers */ = {isa = PBXBuildFile; fileRef = 1843B2481FD1383900E9C7E3 /* PrincetonCoursera.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1843B24D1FD1383900E9C7E3 /* PrincetonCoursera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1843B2461FD1383900E9C7E3 /* PrincetonCoursera.framework */; };
+		1843B24E1FD1383900E9C7E3 /* PrincetonCoursera.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1843B2461FD1383900E9C7E3 /* PrincetonCoursera.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1843B2541FD1385A00E9C7E3 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843B2531FD1385A00E9C7E3 /* QuickSort.swift */; };
+		1843B2561FD1387600E9C7E3 /* SortTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843B2551FD1387600E9C7E3 /* SortTest.swift */; };
+		1843B2581FD13DE800E9C7E3 /* SortPrincetonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843B2571FD13DE800E9C7E3 /* SortPrincetonTest.swift */; };
+		1843B25D1FD13F1800E9C7E3 /* Sortable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843B25C1FD13F1800E9C7E3 /* Sortable.swift */; };
 		18555E591FC6063900C2293C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18555E581FC6063900C2293C /* AppDelegate.swift */; };
 		18555E5B1FC6063900C2293C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18555E5A1FC6063900C2293C /* ViewController.swift */; };
 		18555E5E1FC6063900C2293C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18555E5C1FC6063900C2293C /* Main.storyboard */; };
@@ -44,6 +51,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1843B24B1FD1383900E9C7E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18555E4D1FC6063900C2293C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1843B2451FD1383900E9C7E3;
+			remoteInfo = PrincetonCoursera;
+		};
 		188760AB1FC8962900567042 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 18555E4D1FC6063900C2293C /* Project object */;
@@ -52,6 +66,20 @@
 			remoteInfo = SwiftAlgoStructs;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1843B2521FD1383900E9C7E3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1843B24E1FD1383900E9C7E3 /* PrincetonCoursera.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		15697DB51FCFF6B100138108 /* HashNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashNode.swift; sourceTree = "<group>"; };
@@ -68,6 +96,13 @@
 		182C11441FCF39CD001B462A /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		182C11481FCF3B8B001B462A /* GraphTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTest.swift; sourceTree = "<group>"; };
 		1836F8781FCC9BDA00794C9D /* BSTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTest.swift; sourceTree = "<group>"; };
+		1843B2461FD1383900E9C7E3 /* PrincetonCoursera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PrincetonCoursera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1843B2481FD1383900E9C7E3 /* PrincetonCoursera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrincetonCoursera.h; sourceTree = "<group>"; };
+		1843B2491FD1383900E9C7E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1843B2531FD1385A00E9C7E3 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
+		1843B2551FD1387600E9C7E3 /* SortTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortTest.swift; sourceTree = "<group>"; };
+		1843B2571FD13DE800E9C7E3 /* SortPrincetonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortPrincetonTest.swift; sourceTree = "<group>"; };
+		1843B25C1FD13F1800E9C7E3 /* Sortable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sortable.swift; sourceTree = "<group>"; };
 		18555E551FC6063900C2293C /* SwiftAlgoStructs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAlgoStructs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18555E581FC6063900C2293C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18555E5A1FC6063900C2293C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,10 +130,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1843B2421FD1383900E9C7E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18555E521FC6063900C2293C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1843B24D1FD1383900E9C7E3 /* PrincetonCoursera.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,11 +177,22 @@
 			path = BST;
 			sourceTree = "<group>";
 		};
+		1843B2471FD1383900E9C7E3 /* PrincetonCoursera */ = {
+			isa = PBXGroup;
+			children = (
+				1843B2481FD1383900E9C7E3 /* PrincetonCoursera.h */,
+				1843B2531FD1385A00E9C7E3 /* QuickSort.swift */,
+				1843B2491FD1383900E9C7E3 /* Info.plist */,
+			);
+			path = PrincetonCoursera;
+			sourceTree = "<group>";
+		};
 		18555E4C1FC6063900C2293C = {
 			isa = PBXGroup;
 			children = (
 				18555E571FC6063900C2293C /* SwiftAlgoStructs */,
 				188760A71FC8962900567042 /* SwiftAlgoStructsTests */,
+				1843B2471FD1383900E9C7E3 /* PrincetonCoursera */,
 				18555E561FC6063900C2293C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -148,6 +202,7 @@
 			children = (
 				18555E551FC6063900C2293C /* SwiftAlgoStructs.app */,
 				188760A61FC8962900567042 /* SwiftAlgoStructsTests.xctest */,
+				1843B2461FD1383900E9C7E3 /* PrincetonCoursera.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,11 +235,14 @@
 			isa = PBXGroup;
 			children = (
 				182C11481FCF3B8B001B462A /* GraphTest.swift */,
+				1843B25C1FD13F1800E9C7E3 /* Sortable.swift */,
 				15697DBB1FD003F500138108 /* HashTest.swift */,
 				188760B01FC8965100567042 /* TrieTest.swift */,
 				1836F8781FCC9BDA00794C9D /* BSTest.swift */,
 				18B2AC381FCAB50E00ECFF31 /* QueueTest.swift */,
 				18B2AC3E1FCAB9B200ECFF31 /* QueueTestSAC.swift */,
+				1843B2551FD1387600E9C7E3 /* SortTest.swift */,
+				1843B2571FD13DE800E9C7E3 /* SortPrincetonTest.swift */,
 				188760B21FC8984200567042 /* LinkedListTest.swift */,
 				18B2AC311FCAAE2F00ECFF31 /* StackTest.swift */,
 				18B2AC331FCAAFFE00ECFF31 /* StackTestBishop.swift */,
@@ -230,7 +288,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		1843B2431FD1383900E9C7E3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1843B24A1FD1383900E9C7E3 /* PrincetonCoursera.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		1843B2451FD1383900E9C7E3 /* PrincetonCoursera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1843B2511FD1383900E9C7E3 /* Build configuration list for PBXNativeTarget "PrincetonCoursera" */;
+			buildPhases = (
+				1843B2411FD1383900E9C7E3 /* Sources */,
+				1843B2421FD1383900E9C7E3 /* Frameworks */,
+				1843B2431FD1383900E9C7E3 /* Headers */,
+				1843B2441FD1383900E9C7E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrincetonCoursera;
+			productName = PrincetonCoursera;
+			productReference = 1843B2461FD1383900E9C7E3 /* PrincetonCoursera.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		18555E541FC6063900C2293C /* SwiftAlgoStructs */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18555E671FC6063900C2293C /* Build configuration list for PBXNativeTarget "SwiftAlgoStructs" */;
@@ -238,10 +325,12 @@
 				18555E511FC6063900C2293C /* Sources */,
 				18555E521FC6063900C2293C /* Frameworks */,
 				18555E531FC6063900C2293C /* Resources */,
+				1843B2521FD1383900E9C7E3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1843B24C1FD1383900E9C7E3 /* PBXTargetDependency */,
 			);
 			name = SwiftAlgoStructs;
 			productName = SwiftAlgoStructs;
@@ -276,6 +365,11 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Anton Novoselov";
 				TargetAttributes = {
+					1843B2451FD1383900E9C7E3 = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
 					18555E541FC6063900C2293C = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
@@ -302,11 +396,19 @@
 			targets = (
 				18555E541FC6063900C2293C /* SwiftAlgoStructs */,
 				188760A51FC8962900567042 /* SwiftAlgoStructsTests */,
+				1843B2451FD1383900E9C7E3 /* PrincetonCoursera */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1843B2441FD1383900E9C7E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18555E531FC6063900C2293C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -327,6 +429,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1843B2411FD1383900E9C7E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1843B2541FD1385A00E9C7E3 /* QuickSort.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18555E511FC6063900C2293C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -361,8 +471,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				15697DBC1FD003F500138108 /* HashTest.swift in Sources */,
+				1843B2561FD1387600E9C7E3 /* SortTest.swift in Sources */,
 				188760B31FC8984200567042 /* LinkedListTest.swift in Sources */,
 				188760B11FC8965100567042 /* TrieTest.swift in Sources */,
+				1843B2581FD13DE800E9C7E3 /* SortPrincetonTest.swift in Sources */,
+				1843B25D1FD13F1800E9C7E3 /* Sortable.swift in Sources */,
 				18B2AC321FCAAE2F00ECFF31 /* StackTest.swift in Sources */,
 				1836F8791FCC9BDA00794C9D /* BSTest.swift in Sources */,
 				182C114A1FCF3BB1001B462A /* GraphTest.swift in Sources */,
@@ -375,6 +488,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1843B24C1FD1383900E9C7E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1843B2451FD1383900E9C7E3 /* PrincetonCoursera */;
+			targetProxy = 1843B24B1FD1383900E9C7E3 /* PBXContainerItemProxy */;
+		};
 		188760AC1FC8962900567042 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 18555E541FC6063900C2293C /* SwiftAlgoStructs */;
@@ -402,6 +520,57 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1843B24F1FD1383900E9C7E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 358V8FBM3U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PrincetonCoursera/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonnovoselov.PrincetonCoursera;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1843B2501FD1383900E9C7E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 358V8FBM3U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PrincetonCoursera/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonnovoselov.PrincetonCoursera;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		18555E651FC6063900C2293C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -512,6 +681,7 @@
 		18555E681FC6063900C2293C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 358V8FBM3U;
@@ -527,6 +697,7 @@
 		18555E691FC6063900C2293C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 358V8FBM3U;
@@ -574,6 +745,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1843B2511FD1383900E9C7E3 /* Build configuration list for PBXNativeTarget "PrincetonCoursera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1843B24F1FD1383900E9C7E3 /* Debug */,
+				1843B2501FD1383900E9C7E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		18555E501FC6063900C2293C /* Build configuration list for PBXProject "SwiftAlgoStructs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
