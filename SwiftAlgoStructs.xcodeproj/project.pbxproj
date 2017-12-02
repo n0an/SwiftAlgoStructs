@@ -40,6 +40,10 @@
 		188760B11FC8965100567042 /* TrieTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188760B01FC8965100567042 /* TrieTest.swift */; };
 		188760B31FC8984200567042 /* LinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188760B21FC8984200567042 /* LinkedListTest.swift */; };
 		18902B691FD1BA1E006830A5 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902B681FD1BA1E006830A5 /* Array.swift */; };
+		18902B7A1FD2AB79006830A5 /* RayAlgorithmsClub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18902B731FD2AB79006830A5 /* RayAlgorithmsClub.framework */; };
+		18902B7B1FD2AB79006830A5 /* RayAlgorithmsClub.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18902B731FD2AB79006830A5 /* RayAlgorithmsClub.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18902B801FD2AB8E006830A5 /* Quicksort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902B7F1FD2AB8E006830A5 /* Quicksort.swift */; };
+		18902B821FD2ACBB006830A5 /* SortRayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902B811FD2ACBB006830A5 /* SortRayTest.swift */; };
 		18B2AC2A1FC955DC00ECFF31 /* StackLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC291FC955DC00ECFF31 /* StackLinkedList.swift */; };
 		18B2AC2D1FCAA5D700ECFF31 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC2C1FCAA5D700ECFF31 /* Queue.swift */; };
 		18B2AC301FCAA9CE00ECFF31 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC2F1FCAA9CE00ECFF31 /* Stack.swift */; };
@@ -67,6 +71,13 @@
 			remoteGlobalIDString = 18555E541FC6063900C2293C;
 			remoteInfo = SwiftAlgoStructs;
 		};
+		18902B781FD2AB79006830A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18555E4D1FC6063900C2293C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18902B721FD2AB79006830A5;
+			remoteInfo = RayAlgorithmsClub;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -77,6 +88,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				1843B24E1FD1383900E9C7E3 /* PrincetonCoursera.framework in Embed Frameworks */,
+				18902B7B1FD2AB79006830A5 /* RayAlgorithmsClub.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,6 +133,10 @@
 		188760B01FC8965100567042 /* TrieTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieTest.swift; sourceTree = "<group>"; };
 		188760B21FC8984200567042 /* LinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTest.swift; sourceTree = "<group>"; };
 		18902B681FD1BA1E006830A5 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		18902B731FD2AB79006830A5 /* RayAlgorithmsClub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RayAlgorithmsClub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18902B761FD2AB79006830A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18902B7F1FD2AB8E006830A5 /* Quicksort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quicksort.swift; sourceTree = "<group>"; };
+		18902B811FD2ACBB006830A5 /* SortRayTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortRayTest.swift; sourceTree = "<group>"; };
 		18B2AC291FC955DC00ECFF31 /* StackLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackLinkedList.swift; sourceTree = "<group>"; };
 		18B2AC2C1FCAA5D700ECFF31 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		18B2AC2F1FCAA9CE00ECFF31 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
@@ -146,10 +162,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				1843B24D1FD1383900E9C7E3 /* PrincetonCoursera.framework in Frameworks */,
+				18902B7A1FD2AB79006830A5 /* RayAlgorithmsClub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		188760A31FC8962900567042 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18902B6F1FD2AB79006830A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -223,6 +247,7 @@
 				18555E571FC6063900C2293C /* SwiftAlgoStructs */,
 				1843B2471FD1383900E9C7E3 /* PrincetonCoursera */,
 				188760A71FC8962900567042 /* SwiftAlgoStructsTests */,
+				18902B741FD2AB79006830A5 /* RayAlgorithmsClub */,
 				18555E561FC6063900C2293C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -233,6 +258,7 @@
 				18555E551FC6063900C2293C /* SwiftAlgoStructs.app */,
 				188760A61FC8962900567042 /* SwiftAlgoStructsTests.xctest */,
 				1843B2461FD1383900E9C7E3 /* PrincetonCoursera.framework */,
+				18902B731FD2AB79006830A5 /* RayAlgorithmsClub.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -273,12 +299,22 @@
 				18B2AC3E1FCAB9B200ECFF31 /* QueueTestSAC.swift */,
 				1843B2551FD1387600E9C7E3 /* SortTest.swift */,
 				1843B2571FD13DE800E9C7E3 /* SortPrincetonTest.swift */,
+				18902B811FD2ACBB006830A5 /* SortRayTest.swift */,
 				188760B21FC8984200567042 /* LinkedListTest.swift */,
 				18B2AC311FCAAE2F00ECFF31 /* StackTest.swift */,
 				18B2AC331FCAAFFE00ECFF31 /* StackTestBishop.swift */,
 				188760AA1FC8962900567042 /* Info.plist */,
 			);
 			path = SwiftAlgoStructsTests;
+			sourceTree = "<group>";
+		};
+		18902B741FD2AB79006830A5 /* RayAlgorithmsClub */ = {
+			isa = PBXGroup;
+			children = (
+				18902B761FD2AB79006830A5 /* Info.plist */,
+				18902B7F1FD2AB8E006830A5 /* Quicksort.swift */,
+			);
+			path = RayAlgorithmsClub;
 			sourceTree = "<group>";
 		};
 		18B2AC2B1FCAA5C400ECFF31 /* Queue */ = {
@@ -326,6 +362,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		18902B701FD2AB79006830A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -360,6 +403,7 @@
 			);
 			dependencies = (
 				1843B24C1FD1383900E9C7E3 /* PBXTargetDependency */,
+				18902B791FD2AB79006830A5 /* PBXTargetDependency */,
 			);
 			name = SwiftAlgoStructs;
 			productName = SwiftAlgoStructs;
@@ -383,6 +427,24 @@
 			productName = SwiftAlgoStructsTests;
 			productReference = 188760A61FC8962900567042 /* SwiftAlgoStructsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18902B721FD2AB79006830A5 /* RayAlgorithmsClub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18902B7E1FD2AB79006830A5 /* Build configuration list for PBXNativeTarget "RayAlgorithmsClub" */;
+			buildPhases = (
+				18902B6E1FD2AB79006830A5 /* Sources */,
+				18902B6F1FD2AB79006830A5 /* Frameworks */,
+				18902B701FD2AB79006830A5 /* Headers */,
+				18902B711FD2AB79006830A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RayAlgorithmsClub;
+			productName = RayAlgorithmsClub;
+			productReference = 18902B731FD2AB79006830A5 /* RayAlgorithmsClub.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -408,6 +470,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 18555E541FC6063900C2293C;
 					};
+					18902B721FD2AB79006830A5 = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 18555E501FC6063900C2293C /* Build configuration list for PBXProject "SwiftAlgoStructs" */;
@@ -426,6 +493,7 @@
 				18555E541FC6063900C2293C /* SwiftAlgoStructs */,
 				188760A51FC8962900567042 /* SwiftAlgoStructsTests */,
 				1843B2451FD1383900E9C7E3 /* PrincetonCoursera */,
+				18902B721FD2AB79006830A5 /* RayAlgorithmsClub */,
 			);
 		};
 /* End PBXProject section */
@@ -449,6 +517,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		188760A41FC8962900567042 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18902B711FD2AB79006830A5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -509,11 +584,20 @@
 				1843B25D1FD13F1800E9C7E3 /* Sortable.swift in Sources */,
 				18B2AC321FCAAE2F00ECFF31 /* StackTest.swift in Sources */,
 				155940741FD1647100EFBDCD /* Enums.swift in Sources */,
+				18902B821FD2ACBB006830A5 /* SortRayTest.swift in Sources */,
 				1836F8791FCC9BDA00794C9D /* BSTest.swift in Sources */,
 				182C114A1FCF3BB1001B462A /* GraphTest.swift in Sources */,
 				18B2AC341FCAAFFE00ECFF31 /* StackTestBishop.swift in Sources */,
 				18B2AC391FCAB50E00ECFF31 /* QueueTest.swift in Sources */,
 				18B2AC3F1FCAB9B200ECFF31 /* QueueTestSAC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18902B6E1FD2AB79006830A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18902B801FD2AB8E006830A5 /* Quicksort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +613,11 @@
 			isa = PBXTargetDependency;
 			target = 18555E541FC6063900C2293C /* SwiftAlgoStructs */;
 			targetProxy = 188760AB1FC8962900567042 /* PBXContainerItemProxy */;
+		};
+		18902B791FD2AB79006830A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18902B721FD2AB79006830A5 /* RayAlgorithmsClub */;
+			targetProxy = 18902B781FD2AB79006830A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -774,6 +863,57 @@
 			};
 			name = Release;
 		};
+		18902B7C1FD2AB79006830A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 358V8FBM3U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RayAlgorithmsClub/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonnovoselov.RayAlgorithmsClub;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		18902B7D1FD2AB79006830A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 358V8FBM3U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RayAlgorithmsClub/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonnovoselov.RayAlgorithmsClub;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -809,6 +949,15 @@
 			buildConfigurations = (
 				188760AE1FC8962900567042 /* Debug */,
 				188760AF1FC8962900567042 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18902B7E1FD2AB79006830A5 /* Build configuration list for PBXNativeTarget "RayAlgorithmsClub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18902B7C1FD2AB79006830A5 /* Debug */,
+				18902B7D1FD2AB79006830A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
