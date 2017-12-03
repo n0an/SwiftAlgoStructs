@@ -11,12 +11,9 @@ import XCTest
 
 @testable import SwiftAlgoStructs
 
-// *** Bishop + Bishop Tests
-
 class TrieTest: XCTestCase {
     
     var testTrie = Trie()
-    
     
     override func setUp() {
         super.setUp()
@@ -30,7 +27,6 @@ class TrieTest: XCTestCase {
         testTrie.append(keyword: "Bat")
         testTrie.append(keyword: "Bar")
     }
-    
     
     /*
      the findWord algorithm will only return strings identified as words. For example, the prefix "Ba" has children,
@@ -50,9 +46,7 @@ class TrieTest: XCTestCase {
         }
     }
     
-    
     //note: the findWord algorthim will identify both parents and children identified as words
-    
     func testFindWithWord() {
         
         guard let list = testTrie["Ball"] else {
@@ -63,9 +57,7 @@ class TrieTest: XCTestCase {
         for word in list {
             print("\(word) found in trie..")
         }
-        
     }
-    
     
     //testing false search results
     func testFindNoExist() {
@@ -79,6 +71,4 @@ class TrieTest: XCTestCase {
         
         XCTFail("test failed: \(keyword) incorrectly found in trie..")
     }
-    
-    
 }

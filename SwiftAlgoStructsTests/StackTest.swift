@@ -11,73 +11,59 @@ import XCTest
 
 @testable import SwiftAlgoStructs
 
-// *** Princeton Algrorithms + SAC Tests
-
 class StackTest: XCTestCase {
+    
+    var numberList: Array<Int>!
     
     override func setUp() {
         super.setUp()
-        
+        numberList = [8, 2, 10, 9, 1, 5]
     }
     
-    func testLLStackEmpty() {
-        let linkedListStack = StackLinkedList<Int>()
-        XCTAssertTrue(linkedListStack.isEmpty())
-        XCTAssertEqual(linkedListStack.count, 0)
-        XCTAssertNil(linkedListStack.pop())
+    //provides self-contained example of push function - essay example
+    func testPushStack() {
+        
+        let myStack = Stack<Int>()
+        XCTAssertTrue(myStack.count == 0, "test failed: count not initialized..")
+        
+        //build stack
+        for s in numberList {
+            myStack.push(key: s)
+            print("item: \(s) added..")
+        }
+        
+        XCTAssertTrue(myStack.count == numberList.count, "test failed: stack count does not match..")
     }
     
-    func testOneElementLLStack() {
-        let stack = StackLinkedList<Int>()
+    func testPopStack() {
         
-        stack.push(item: 123)
-        XCTAssertFalse(stack.isEmpty())
-        XCTAssertEqual(stack.count, 1)
+        let myStack: Stack<Int> = self.buildStack()
         
-        let result = stack.pop()
-        XCTAssertEqual(result, 123)
-        XCTAssertTrue(stack.isEmpty())
-        XCTAssertEqual(stack.count, 0)
-        XCTAssertNil(stack.pop())
+        if myStack.count == 0 {
+            XCTFail("test failed: no stack items available..")
+        }
+        
+        for _ in stride(from: myStack.count, through: 0, by: -1) {
+            print("stack item is: \(String(describing: myStack.peek().key)). stack count: \(myStack.count)")
+            myStack.pop()
+        }
+        
+        XCTAssertTrue(myStack.isEmpty, "test failed: stack structured not emptied..")
     }
     
-    func testTwoElementsLLStack() {
-        let stack = StackLinkedList<Int>()
+    func buildStack() -> Stack<Int>! {
         
-        stack.push(item: 123)
-        stack.push(item: 456)
-        XCTAssertFalse(stack.isEmpty())
-        XCTAssertEqual(stack.count, 2)
+        let newStack: Stack<Int> = Stack<Int>()
+        XCTAssertTrue(newStack.count == 0, "test failed: count not initialized..")
         
-        let result1 = stack.pop()
-        XCTAssertEqual(result1, 456)
-        XCTAssertFalse(stack.isEmpty())
-        XCTAssertEqual(stack.count, 1)
+        //build stack
+        for s in numberList {
+            newStack.push(key: s)
+            print("item: \(s) added..")
+        }
         
-        let result2 = stack.pop()
-        XCTAssertEqual(result2, 123)
-        XCTAssertTrue(stack.isEmpty())
-        XCTAssertEqual(stack.count, 0)
-        XCTAssertNil(stack.pop())
+        print("stack count is: \(newStack.count)")
+        
+        return newStack
     }
-    
-    func testMakeEmptyLLStack() {
-        let stack = StackLinkedList<Int>()
-        
-        stack.push(item: 123)
-        stack.push(item: 456)
-        XCTAssertNotNil(stack.pop())
-        XCTAssertNotNil(stack.pop())
-        XCTAssertNil(stack.pop())
-        
-        stack.push(item: 789)
-        XCTAssertEqual(stack.count, 1)
-        
-        let result = stack.pop()
-        XCTAssertEqual(result, 789)
-        XCTAssertTrue(stack.isEmpty())
-        XCTAssertEqual(stack.count, 0)
-        XCTAssertNil(stack.pop())
-    }
-    
 }

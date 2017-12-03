@@ -1,5 +1,5 @@
 //
-//  SortPrincetonTest.swift
+//  SortTestPrinceton.swift
 //  SwiftAlgoStructsTests
 //
 //  Created by Anton Novoselov on 01/12/2017.
@@ -14,7 +14,7 @@ import GameKit
 
 @testable import PrincetonCoursera
 
-class SortPrincetonTest:XCTestCase, Sortable {
+class SortTestPrinceton:XCTestCase, Sortable {
     
     let duplicatesRatio = 1.0
     

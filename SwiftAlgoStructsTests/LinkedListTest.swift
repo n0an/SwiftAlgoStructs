@@ -11,8 +11,6 @@ import XCTest
 
 @testable import SwiftAlgoStructs
 
-// *** Bishop + Bishop Tests
-
 //struct for testing indicies
 struct keyIndex {
     
@@ -20,11 +18,9 @@ struct keyIndex {
     public var index: Int
 }
 
-
 class LinkedTest: XCTestCase {
     
     var numberList : Array<Int>!
-    
     
     override func setUp() {
         super.setUp()
@@ -34,10 +30,8 @@ class LinkedTest: XCTestCase {
     //retrieve specific links
     func testLinkAtIndex() {
         
-        
         let list = buildLinkedList()
         let nodecount: Int = list.count
-        
         
         //test lower-bound
         let lbound = list[0]
@@ -45,42 +39,32 @@ class LinkedTest: XCTestCase {
             XCTFail("lowest bound retrieve fail..")
         }
         
-        
         //upper bound
         let ubound = list[nodecount - 1]
         if ((ubound == nil) || (ubound?.key != numberList[nodecount - 1])) {
             XCTFail("upper bound retrieve fail..")
         }
         
-        
         //establish random index
         let range: UInt32 = UInt32(numberList.count)
         let randomIndex = Int(arc4random_uniform(range))
-        
         
         //retrieve random index
         let randomlink = list[randomIndex]
         if ((randomlink == nil) || (randomlink?.key != numberList[randomIndex])) {
             XCTFail("random index retrieve fail..")
         }
-        
     }
-    
-    
-    
     
     //test nodes at a specific index
     func testAddLinkAtIndex() {
-        
         
         //create list and test pair
         let list = buildLinkedList()
         let testPair: keyIndex = keyIndex(key: 4, index: 3)
         
-        
         list.insert(testPair.key, at: testPair.index)
         list.printAllKeys()
-        
         
         let current = list[testPair.index]
         
@@ -89,31 +73,23 @@ class LinkedTest: XCTestCase {
             XCTFail("linked list addition at index failed..")
         }
         
-        
         //remove test item
         list.remove(at: testPair.index)
         list.printAllKeys()
         
-        
         //retrieve value at same position
         let removed = list[testPair.index] as LLNode!
-        
         
         if removed == nil || removed?.key == testPair.key {
             XCTFail("test failed: removed linked list element not found")
         }
         
-        
-    } //end function
-    
-    
-    
+    }
     
     //reverse a linked list
     func testReverseLinkedList() {
         
         let list = buildLinkedList()
-        
         
         //find (subscript) syntax
         guard let flink = list[0] else {
@@ -125,7 +101,6 @@ class LinkedTest: XCTestCase {
         list.reverse()
         list.printAllKeys()
         
-        
         if let blink = list[0] {
             
             //evaluate keys
@@ -135,11 +110,7 @@ class LinkedTest: XCTestCase {
         }
     }
     
-    
-    
     //MARK: helper functions
-    
-    
     func buildLinkedList() ->LinkedList<Int> {
         
         let list = LinkedList<Int>()
@@ -149,7 +120,7 @@ class LinkedTest: XCTestCase {
             list.append(element: number)
         }
         
-        
+
         list.printAllKeys()
         XCTAssertFalse(list.count != numberList.count, "test failed: linked list count doesn't match number list..")
         

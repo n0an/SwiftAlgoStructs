@@ -20,16 +20,13 @@ class QueueTest: XCTestCase {
         numberList = [8, 2, 10, 9, 7, 5]
     }
     
-    
     //test the deQueueing process
     func testDeQueue() {
         
         let q: Queue<Int>! = buildQueue()
         
         XCTAssertNotNil(q, "queue instance not present..")
-        
     }
-    
     
     //MARK: helper methods
     func buildQueue() -> Queue<Int>! {
@@ -38,13 +35,11 @@ class QueueTest: XCTestCase {
         
         XCTAssertTrue(newq.count == 0, "new queue instance not created..")
         
-        
         //build queue
         for s in numberList {
             newq.enqueue(key: s)
             print("count is: \(newq.count)")
         }
-        
         
         //check equality
         if newq.count != numberList.count {
@@ -52,9 +47,6 @@ class QueueTest: XCTestCase {
         }
         
         return newq
-        
     }
-    
-    
     
 }

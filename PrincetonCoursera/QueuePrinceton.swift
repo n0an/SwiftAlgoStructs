@@ -68,5 +68,4 @@ class QueuePrinceton<T> {
         return isEmpty ? nil : first?.value
     }
     
-    
 }

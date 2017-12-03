@@ -79,12 +79,10 @@ class GraphTest: XCTestCase {
         testGraph.traverse(startingVertex: vertexA)
     }
     
-    /*
     //breadth-first search with function
     func testBFSTraverseFunction() {
         testGraph.traverse(vertexA, formula: traverseFormula)
     }
-    
     
     //breadth-first search with closure expression
     func testBFSTraverseExpression() {
@@ -112,7 +110,7 @@ class GraphTest: XCTestCase {
         node.visited = true
         print("traversed vertex: \(node.key!)..")
     }
-    */
+    
     
     //MARK: - Helper functions
     //check for membership

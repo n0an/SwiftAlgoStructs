@@ -10,8 +10,6 @@ import XCTest
 
 @testable import SwiftAlgoStructs
 
-// *** Bishop + Bishop Tests
-
 class BSTest: XCTestCase {
     
     override func setUp() {

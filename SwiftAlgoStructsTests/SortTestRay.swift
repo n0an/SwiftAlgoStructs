@@ -1,5 +1,5 @@
 //
-//  SortRayTest.swift
+//  SortTestRay.swift
 //  SwiftAlgoStructsTests
 //
 //  Created by Anton Novoselov on 02/12/2017.
@@ -14,7 +14,7 @@ import GameKit
 
 @testable import RayAlgorithmsClub
 
-class SortRayTest:XCTestCase, Sortable {
+class SortTestRay:XCTestCase, Sortable {
     
     let duplicatesRatio = 0.9
     

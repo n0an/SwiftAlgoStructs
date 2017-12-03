@@ -1,5 +1,5 @@
 //
-//  QueueTestSAC.swift
+//  QueueTestPrinceton.swift
 //  SwiftAlgoStructsTests
 //
 //  Created by Anton Novoselov on 26/11/2017.
@@ -9,9 +9,9 @@
 import Foundation
 import XCTest
 
-@testable import SwiftAlgoStructs
+@testable import PrincetonCoursera
 
-class QueueTestSAC: XCTestCase {
+class QueueTestPrinceton: XCTestCase {
     func testQLLEmpty() {
         let queue = QueuePrinceton<Int>()
         XCTAssertTrue(queue.isEmpty)
