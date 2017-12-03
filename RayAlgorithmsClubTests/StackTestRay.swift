@@ -13,11 +13,6 @@ import XCTest
 
 class StackTestRay: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        
-    }
-    
     func testLLStackEmpty() {
         let linkedListStack = StackLinkedList<Int>()
         XCTAssertTrue(linkedListStack.isEmpty())

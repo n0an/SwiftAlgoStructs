@@ -27,7 +27,6 @@
 		1843B24E1FD1383900E9C7E3 /* PrincetonCoursera.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1843B2461FD1383900E9C7E3 /* PrincetonCoursera.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1843B2541FD1385A00E9C7E3 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843B2531FD1385A00E9C7E3 /* QuickSort.swift */; };
 		1843B2561FD1387600E9C7E3 /* SortTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843B2551FD1387600E9C7E3 /* SortTest.swift */; };
-		1843B2581FD13DE800E9C7E3 /* SortTestPrinceton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843B2571FD13DE800E9C7E3 /* SortTestPrinceton.swift */; };
 		1843B25D1FD13F1800E9C7E3 /* Sortable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843B25C1FD13F1800E9C7E3 /* Sortable.swift */; };
 		18555E591FC6063900C2293C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18555E581FC6063900C2293C /* AppDelegate.swift */; };
 		18555E5B1FC6063900C2293C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18555E5A1FC6063900C2293C /* ViewController.swift */; };
@@ -42,19 +41,26 @@
 		18902B7A1FD2AB79006830A5 /* RayAlgorithmsClub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18902B731FD2AB79006830A5 /* RayAlgorithmsClub.framework */; };
 		18902B7B1FD2AB79006830A5 /* RayAlgorithmsClub.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18902B731FD2AB79006830A5 /* RayAlgorithmsClub.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18902B801FD2AB8E006830A5 /* Quicksort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902B7F1FD2AB8E006830A5 /* Quicksort.swift */; };
-		18902B821FD2ACBB006830A5 /* SortTestRay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902B811FD2ACBB006830A5 /* SortTestRay.swift */; };
 		18AA03401FD3E2CC00B0E0BD /* LLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA033F1FD3E2CC00B0E0BD /* LLNode.swift */; };
 		18AA03411FD3E50600B0E0BD /* QueuePrinceton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC3A1FCAB60600ECFF31 /* QueuePrinceton.swift */; };
 		18AA03431FD3E52800B0E0BD /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA03421FD3E52800B0E0BD /* Node.swift */; };
 		18AA03441FD3E5AD00B0E0BD /* StackLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC291FC955DC00ECFF31 /* StackLinkedList.swift */; };
+		18AA034E1FD3EB4200B0E0BD /* PrincetonCoursera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1843B2461FD1383900E9C7E3 /* PrincetonCoursera.framework */; };
 		18B2AC2D1FCAA5D700ECFF31 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC2C1FCAA5D700ECFF31 /* Queue.swift */; };
 		18B2AC301FCAA9CE00ECFF31 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC2F1FCAA9CE00ECFF31 /* Stack.swift */; };
-		18B2AC321FCAAE2F00ECFF31 /* StackTestRay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC311FCAAE2F00ECFF31 /* StackTestRay.swift */; };
 		18B2AC341FCAAFFE00ECFF31 /* StackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC331FCAAFFE00ECFF31 /* StackTest.swift */; };
 		18B2AC391FCAB50E00ECFF31 /* QueueTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC381FCAB50E00ECFF31 /* QueueTest.swift */; };
-		18B2AC3F1FCAB9B200ECFF31 /* QueueTestPrinceton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC3E1FCAB9B200ECFF31 /* QueueTestPrinceton.swift */; };
 		18C55D3A1FCBEBB300870A51 /* BSNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C55D391FCBEBB300870A51 /* BSNode.swift */; };
 		18C55D3C1FCBECC700870A51 /* BSTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C55D3B1FCBECC700870A51 /* BSTree.swift */; };
+		18D3291D1FD3EC6C0044B6D3 /* QueueTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D3291C1FD3EC6C0044B6D3 /* QueueTest.swift */; };
+		18D3291E1FD3EC990044B6D3 /* SortTestPrinceton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843B2571FD13DE800E9C7E3 /* SortTestPrinceton.swift */; };
+		18D329231FD3ECC70044B6D3 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155940731FD1647100EFBDCD /* Enums.swift */; };
+		18D329241FD3ECCB0044B6D3 /* Sortable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843B25C1FD13F1800E9C7E3 /* Sortable.swift */; };
+		18D3292E1FD3ED270044B6D3 /* RayAlgorithmsClub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18902B731FD2AB79006830A5 /* RayAlgorithmsClub.framework */; };
+		18D329341FD3ED340044B6D3 /* SortTestRay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902B811FD2ACBB006830A5 /* SortTestRay.swift */; };
+		18D329351FD3ED340044B6D3 /* StackTestRay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC311FCAAE2F00ECFF31 /* StackTestRay.swift */; };
+		18D329361FD3ED3B0044B6D3 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155940731FD1647100EFBDCD /* Enums.swift */; };
+		18D329371FD3ED3D0044B6D3 /* Sortable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843B25C1FD13F1800E9C7E3 /* Sortable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +79,20 @@
 			remoteInfo = SwiftAlgoStructs;
 		};
 		18902B781FD2AB79006830A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18555E4D1FC6063900C2293C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18902B721FD2AB79006830A5;
+			remoteInfo = RayAlgorithmsClub;
+		};
+		18AA034F1FD3EB4200B0E0BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18555E4D1FC6063900C2293C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1843B2451FD1383900E9C7E3;
+			remoteInfo = PrincetonCoursera;
+		};
+		18D3292F1FD3ED270044B6D3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 18555E4D1FC6063900C2293C /* Project object */;
 			proxyType = 1;
@@ -139,6 +159,8 @@
 		18902B811FD2ACBB006830A5 /* SortTestRay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortTestRay.swift; sourceTree = "<group>"; };
 		18AA033F1FD3E2CC00B0E0BD /* LLNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLNode.swift; sourceTree = "<group>"; };
 		18AA03421FD3E52800B0E0BD /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		18AA03491FD3EB4200B0E0BD /* PrincetonCourseraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrincetonCourseraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18AA034D1FD3EB4200B0E0BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18B2AC291FC955DC00ECFF31 /* StackLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackLinkedList.swift; sourceTree = "<group>"; };
 		18B2AC2C1FCAA5D700ECFF31 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		18B2AC2F1FCAA9CE00ECFF31 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
@@ -146,9 +168,11 @@
 		18B2AC331FCAAFFE00ECFF31 /* StackTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTest.swift; sourceTree = "<group>"; };
 		18B2AC381FCAB50E00ECFF31 /* QueueTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueTest.swift; sourceTree = "<group>"; };
 		18B2AC3A1FCAB60600ECFF31 /* QueuePrinceton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueuePrinceton.swift; sourceTree = "<group>"; };
-		18B2AC3E1FCAB9B200ECFF31 /* QueueTestPrinceton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueTestPrinceton.swift; sourceTree = "<group>"; };
 		18C55D391FCBEBB300870A51 /* BSNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSNode.swift; sourceTree = "<group>"; };
 		18C55D3B1FCBECC700870A51 /* BSTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTree.swift; sourceTree = "<group>"; };
+		18D3291C1FD3EC6C0044B6D3 /* QueueTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueTest.swift; sourceTree = "<group>"; };
+		18D329291FD3ED270044B6D3 /* RayAlgorithmsClubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RayAlgorithmsClubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18D3292D1FD3ED270044B6D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +203,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18AA03461FD3EB4200B0E0BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18AA034E1FD3EB4200B0E0BD /* PrincetonCoursera.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18D329261FD3ED270044B6D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18D3292E1FD3ED270044B6D3 /* RayAlgorithmsClub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +290,9 @@
 			children = (
 				18555E571FC6063900C2293C /* SwiftAlgoStructs */,
 				1843B2471FD1383900E9C7E3 /* PrincetonCoursera */,
+				18AA034A1FD3EB4200B0E0BD /* PrincetonCourseraTests */,
 				18902B741FD2AB79006830A5 /* RayAlgorithmsClub */,
+				18D3292A1FD3ED270044B6D3 /* RayAlgorithmsClubTests */,
 				188760A71FC8962900567042 /* SwiftAlgoStructsTests */,
 				18555E561FC6063900C2293C /* Products */,
 			);
@@ -263,6 +305,8 @@
 				188760A61FC8962900567042 /* SwiftAlgoStructsTests.xctest */,
 				1843B2461FD1383900E9C7E3 /* PrincetonCoursera.framework */,
 				18902B731FD2AB79006830A5 /* RayAlgorithmsClub.framework */,
+				18AA03491FD3EB4200B0E0BD /* PrincetonCourseraTests.xctest */,
+				18D329291FD3ED270044B6D3 /* RayAlgorithmsClubTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -299,13 +343,9 @@
 				188760B01FC8965100567042 /* TrieTest.swift */,
 				1836F8781FCC9BDA00794C9D /* BSTest.swift */,
 				18B2AC381FCAB50E00ECFF31 /* QueueTest.swift */,
-				18B2AC3E1FCAB9B200ECFF31 /* QueueTestPrinceton.swift */,
 				1843B2551FD1387600E9C7E3 /* SortTest.swift */,
-				1843B2571FD13DE800E9C7E3 /* SortTestPrinceton.swift */,
-				18902B811FD2ACBB006830A5 /* SortTestRay.swift */,
 				188760B21FC8984200567042 /* LinkedListTest.swift */,
 				18B2AC331FCAAFFE00ECFF31 /* StackTest.swift */,
-				18B2AC311FCAAE2F00ECFF31 /* StackTestRay.swift */,
 				188760AA1FC8962900567042 /* Info.plist */,
 			);
 			path = SwiftAlgoStructsTests;
@@ -318,6 +358,16 @@
 				18902B7F1FD2AB8E006830A5 /* Quicksort.swift */,
 			);
 			path = RayAlgorithmsClub;
+			sourceTree = "<group>";
+		};
+		18AA034A1FD3EB4200B0E0BD /* PrincetonCourseraTests */ = {
+			isa = PBXGroup;
+			children = (
+				18D3291C1FD3EC6C0044B6D3 /* QueueTest.swift */,
+				1843B2571FD13DE800E9C7E3 /* SortTestPrinceton.swift */,
+				18AA034D1FD3EB4200B0E0BD /* Info.plist */,
+			);
+			path = PrincetonCourseraTests;
 			sourceTree = "<group>";
 		};
 		18B2AC2B1FCAA5C400ECFF31 /* Queue */ = {
@@ -353,6 +403,16 @@
 				18AA033F1FD3E2CC00B0E0BD /* LLNode.swift */,
 			);
 			path = "Linked List";
+			sourceTree = "<group>";
+		};
+		18D3292A1FD3ED270044B6D3 /* RayAlgorithmsClubTests */ = {
+			isa = PBXGroup;
+			children = (
+				18902B811FD2ACBB006830A5 /* SortTestRay.swift */,
+				18B2AC311FCAAE2F00ECFF31 /* StackTestRay.swift */,
+				18D3292D1FD3ED270044B6D3 /* Info.plist */,
+			);
+			path = RayAlgorithmsClubTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,6 +509,42 @@
 			productReference = 18902B731FD2AB79006830A5 /* RayAlgorithmsClub.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		18AA03481FD3EB4200B0E0BD /* PrincetonCourseraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18AA03511FD3EB4200B0E0BD /* Build configuration list for PBXNativeTarget "PrincetonCourseraTests" */;
+			buildPhases = (
+				18AA03451FD3EB4200B0E0BD /* Sources */,
+				18AA03461FD3EB4200B0E0BD /* Frameworks */,
+				18AA03471FD3EB4200B0E0BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18AA03501FD3EB4200B0E0BD /* PBXTargetDependency */,
+			);
+			name = PrincetonCourseraTests;
+			productName = PrincetonCourseraTests;
+			productReference = 18AA03491FD3EB4200B0E0BD /* PrincetonCourseraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18D329281FD3ED270044B6D3 /* RayAlgorithmsClubTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18D329311FD3ED270044B6D3 /* Build configuration list for PBXNativeTarget "RayAlgorithmsClubTests" */;
+			buildPhases = (
+				18D329251FD3ED270044B6D3 /* Sources */,
+				18D329261FD3ED270044B6D3 /* Frameworks */,
+				18D329271FD3ED270044B6D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18D329301FD3ED270044B6D3 /* PBXTargetDependency */,
+			);
+			name = RayAlgorithmsClubTests;
+			productName = RayAlgorithmsClubTests;
+			productReference = 18D329291FD3ED270044B6D3 /* RayAlgorithmsClubTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -478,6 +574,14 @@
 						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
+					18AA03481FD3EB4200B0E0BD = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					18D329281FD3ED270044B6D3 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 18555E501FC6063900C2293C /* Build configuration list for PBXProject "SwiftAlgoStructs" */;
@@ -497,6 +601,8 @@
 				188760A51FC8962900567042 /* SwiftAlgoStructsTests */,
 				1843B2451FD1383900E9C7E3 /* PrincetonCoursera */,
 				18902B721FD2AB79006830A5 /* RayAlgorithmsClub */,
+				18AA03481FD3EB4200B0E0BD /* PrincetonCourseraTests */,
+				18D329281FD3ED270044B6D3 /* RayAlgorithmsClubTests */,
 			);
 		};
 /* End PBXProject section */
@@ -527,6 +633,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		18902B711FD2AB79006830A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18AA03471FD3EB4200B0E0BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18D329271FD3ED270044B6D3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -584,16 +704,12 @@
 				1843B2561FD1387600E9C7E3 /* SortTest.swift in Sources */,
 				188760B31FC8984200567042 /* LinkedListTest.swift in Sources */,
 				188760B11FC8965100567042 /* TrieTest.swift in Sources */,
-				1843B2581FD13DE800E9C7E3 /* SortTestPrinceton.swift in Sources */,
 				1843B25D1FD13F1800E9C7E3 /* Sortable.swift in Sources */,
-				18B2AC321FCAAE2F00ECFF31 /* StackTestRay.swift in Sources */,
 				155940741FD1647100EFBDCD /* Enums.swift in Sources */,
-				18902B821FD2ACBB006830A5 /* SortTestRay.swift in Sources */,
 				1836F8791FCC9BDA00794C9D /* BSTest.swift in Sources */,
 				182C114A1FCF3BB1001B462A /* GraphTest.swift in Sources */,
 				18B2AC341FCAAFFE00ECFF31 /* StackTest.swift in Sources */,
 				18B2AC391FCAB50E00ECFF31 /* QueueTest.swift in Sources */,
-				18B2AC3F1FCAB9B200ECFF31 /* QueueTestPrinceton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,6 +718,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				18902B801FD2AB8E006830A5 /* Quicksort.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18AA03451FD3EB4200B0E0BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18D3291E1FD3EC990044B6D3 /* SortTestPrinceton.swift in Sources */,
+				18D329241FD3ECCB0044B6D3 /* Sortable.swift in Sources */,
+				18D329231FD3ECC70044B6D3 /* Enums.swift in Sources */,
+				18D3291D1FD3EC6C0044B6D3 /* QueueTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18D329251FD3ED270044B6D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18D329341FD3ED340044B6D3 /* SortTestRay.swift in Sources */,
+				18D329361FD3ED3B0044B6D3 /* Enums.swift in Sources */,
+				18D329371FD3ED3D0044B6D3 /* Sortable.swift in Sources */,
+				18D329351FD3ED340044B6D3 /* StackTestRay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,6 +760,16 @@
 			isa = PBXTargetDependency;
 			target = 18902B721FD2AB79006830A5 /* RayAlgorithmsClub */;
 			targetProxy = 18902B781FD2AB79006830A5 /* PBXContainerItemProxy */;
+		};
+		18AA03501FD3EB4200B0E0BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1843B2451FD1383900E9C7E3 /* PrincetonCoursera */;
+			targetProxy = 18AA034F1FD3EB4200B0E0BD /* PBXContainerItemProxy */;
+		};
+		18D329301FD3ED270044B6D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18902B721FD2AB79006830A5 /* RayAlgorithmsClub */;
+			targetProxy = 18D3292F1FD3ED270044B6D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -918,6 +1066,62 @@
 			};
 			name = Release;
 		};
+		18AA03521FD3EB4200B0E0BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 358V8FBM3U;
+				INFOPLIST_FILE = PrincetonCourseraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonnovoselov.PrincetonCourseraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18AA03531FD3EB4200B0E0BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 358V8FBM3U;
+				INFOPLIST_FILE = PrincetonCourseraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonnovoselov.PrincetonCourseraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18D329321FD3ED270044B6D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 358V8FBM3U;
+				INFOPLIST_FILE = RayAlgorithmsClubTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonnovoselov.RayAlgorithmsClubTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18D329331FD3ED270044B6D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 358V8FBM3U;
+				INFOPLIST_FILE = RayAlgorithmsClubTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonnovoselov.RayAlgorithmsClubTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -962,6 +1166,24 @@
 			buildConfigurations = (
 				18902B7C1FD2AB79006830A5 /* Debug */,
 				18902B7D1FD2AB79006830A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18AA03511FD3EB4200B0E0BD /* Build configuration list for PBXNativeTarget "PrincetonCourseraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18AA03521FD3EB4200B0E0BD /* Debug */,
+				18AA03531FD3EB4200B0E0BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18D329311FD3ED270044B6D3 /* Build configuration list for PBXNativeTarget "RayAlgorithmsClubTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18D329321FD3ED270044B6D3 /* Debug */,
+				18D329331FD3ED270044B6D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

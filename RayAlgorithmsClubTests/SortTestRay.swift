@@ -18,11 +18,6 @@ class SortTestRay:XCTestCase, Sortable {
     
     let duplicatesRatio = 0.9
     
-    override func setUp() {
-        super.setUp()
-        
-    }
-    
     func testQuickSort() {
         
         let arrayToSort = Array(1...ArraySize.k100.rawValue)
@@ -32,9 +27,7 @@ class SortTestRay:XCTestCase, Sortable {
         let start = Date()
         
         print("Start to sort")
-        
-//        let sortedArr = Quick.sort(arr: shuffledArrayToSort)
-        
+                
         quicksortHoare(&shuffledArrayToSort, low: 0, high: shuffledArrayToSort.count - 1)
 
         
@@ -50,7 +43,6 @@ class SortTestRay:XCTestCase, Sortable {
         // 1000     - 0.004
         // 10_000   - 0.029
     
-        
     }
     
     func testQuickSortWithDuplicates() {
@@ -110,7 +102,6 @@ class SortTestRay:XCTestCase, Sortable {
         // 1000      - 0.071
         // 10_000    - 3.522
         
-
     }
     
 }

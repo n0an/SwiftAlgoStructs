@@ -53,7 +53,7 @@ class SortTestPrinceton:XCTestCase, Sortable {
     
     func testQuickSortWithDuplicates() {
 
-        let arraySize = ArraySize.k10.rawValue
+        let arraySize = ArraySize.k1.rawValue
         
         let arrWithDuplicates = Array<Int>(repeating: 100, count: Int(Double(arraySize) * duplicatesRatio))
         
@@ -88,7 +88,7 @@ class SortTestPrinceton:XCTestCase, Sortable {
     }
     
     func testQuickSortAlreadySortedArray() {
-        let arr = Array(1...ArraySize.k10.rawValue)
+        let arr = Array(1...ArraySize.k1.rawValue)
 
         let start = Date()
         

@@ -8,8 +8,6 @@
 
 import Foundation
 
-// *** Princeton Algorithms
-
 class QueuePrinceton<T> {
     
     private class QueueNode<T> {

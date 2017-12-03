@@ -1,5 +1,5 @@
 //
-//  QueueTestPrinceton.swift
+//  QueueTest.swift
 //  SwiftAlgoStructsTests
 //
 //  Created by Anton Novoselov on 26/11/2017.
@@ -11,7 +11,7 @@ import XCTest
 
 @testable import PrincetonCoursera
 
-class QueueTestPrinceton: XCTestCase {
+class QueueTest: XCTestCase {
     func testQLLEmpty() {
         let queue = QueuePrinceton<Int>()
         XCTAssertTrue(queue.isEmpty)
@@ -77,3 +77,5 @@ class QueueTestPrinceton: XCTestCase {
         XCTAssertEqual(queue.front, nil)
     }
 }
+
+
