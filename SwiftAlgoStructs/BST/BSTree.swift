@@ -8,8 +8,6 @@
 
 import Foundation
 
-// *** Bishop
-
 class BSTree<T: Comparable> {
     
     var root = BSNode<T>()

@@ -111,29 +111,5 @@ public class Trie {
     }
 }
 
-extension String {
-    
-    var length: Int {
-        return self.count
-    }
-    
-    func substring(to: Int) -> String {
-        
-        let range = self.index(self.startIndex, offsetBy: to)
-        
-        return String(self[..<range])
-        
-    }
-    
-}
-
-
-
-
-
-
-
-
-
 
 

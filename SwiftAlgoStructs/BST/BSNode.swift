@@ -8,8 +8,6 @@
 
 import Foundation
 
-// *** Bishop
-
 class BSNode<T> {
     var key: T?
     var left: BSNode?

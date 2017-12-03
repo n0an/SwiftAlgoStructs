@@ -8,20 +8,13 @@
 
 import Foundation
 
-// *** Bishop
-
 class Stack<T> {
     
-    class StackNode<T> {
-        var key: T?
-        var next: StackNode?
-    }
-    
-    private var top: StackNode<T>
+    private var top: Node<T>
     private var counter = 0
     
     init() {
-        top = StackNode<T>()
+        top = Node<T>()
     }
     
     // number of items - O(1)
@@ -43,7 +36,7 @@ class Stack<T> {
         }
         
         // create new item
-        let childToUse = StackNode<T>()
+        let childToUse = Node<T>()
         childToUse.key = key
         
         childToUse.next = top
@@ -66,7 +59,7 @@ class Stack<T> {
     }
     
     // retrieve the top most item - O(1)
-    func peek() -> StackNode<T> {
+    func peek() -> Node<T> {
         return top
     }
     

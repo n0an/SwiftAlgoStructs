@@ -8,8 +8,6 @@
 
 import Foundation
 
-// *** Bishop
-
 public class Graph {
     
     // declare graph canvas
@@ -234,6 +232,42 @@ public class Graph {
         
     }
     
+    //MARK: traversal algorithms
+    //bfs traversal with inout closure function
+    func traverse(_ startingv: Vertex, formula: (_ node: inout Vertex) -> ()) {
+        
+        //establish a new queue
+        let graphQueue: Queue<Vertex> = Queue<Vertex>()
+        
+        //queue a starting vertex
+        graphQueue.enqueue(key: startingv)
+        
+        while !graphQueue.isEmpty {
+            
+            //traverse the next queued vertex
+            var vitem: Vertex = graphQueue.dequeue() as Vertex!
+            
+            //add unvisited vertices to the queue
+            for e in vitem.neighbors {
+                if e.neighbor.visited == false {
+                    print("adding vertex: \(e.neighbor.key!) to queue..")
+                    graphQueue.enqueue(key: e.neighbor)
+                }
+            }
+            
+            /*
+             notes: this demonstrates how to invoke a closure with an inout parameter.
+             By passing by reference no return value is required.
+             */
+            
+            //invoke formula
+            formula(&vitem)
+            
+        }
+        
+        print("graph traversal complete..")
+    }
+    
     // breadth first search traverse
     func traverse(startingVertex: Vertex) {
         
@@ -263,20 +297,48 @@ public class Graph {
         }
         print("graph traversal completed")
     }
+    
+    
+    //use bfs with trailing closure to update all values
+    func update(startingv: Vertex, formula:((Vertex) -> Bool)) {
+        
+        //establish a new queue
+        let graphQueue: Queue<Vertex> = Queue<Vertex>()
+        
+        //queue a starting vertex
+        graphQueue.enqueue(key: startingv)
+        
+        while !graphQueue.isEmpty {
+            
+            //traverse the next queued vertex
+            let vitem = graphQueue.dequeue() as Vertex!
+            
+            guard vitem != nil else {
+                return
+            }
+            
+            //add unvisited vertices to the queue
+            for e in vitem!.neighbors {
+                if e.neighbor.visited == false {
+                    print("adding vertex: \(e.neighbor.key!) to queue..")
+                    graphQueue.enqueue(key: e.neighbor)
+                }
+            }
+            
+            //apply formula..
+            if formula(vitem!) == false {
+                print("formula unable to update: \(String(describing: vitem!.key))")
+            } else {
+                print("traversed vertex: \(vitem!.key!)..")
+            }
+            
+            vitem!.visited = true
+            
+        }
+        
+        print("graph traversal complete..")
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

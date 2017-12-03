@@ -11,8 +11,6 @@ import XCTest
 
 @testable import SwiftAlgoStructs
 
-// *** Bishop + Bishop Tests
-
 class GraphTest: XCTestCase {
     
     var testGraph = Graph()

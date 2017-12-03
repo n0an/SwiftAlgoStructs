@@ -55,7 +55,6 @@ class SortTest:XCTestCase, Sortable {
         
         print("Start to sort")
         
-//        let sortedArr = quickSort(array: shuffledArray)
         let sortedArr = shuffledArray.quickSort()
 
         print("shuffled")
@@ -76,7 +75,7 @@ class SortTest:XCTestCase, Sortable {
     
     func testQuickSortWithDuplicates() {
         
-        let arraySize = ArraySize.k10.rawValue
+        let arraySize = ArraySize.k100.rawValue
         
         let arrWithDuplicates = Array<Int>(repeating: 100, count: Int(Double(arraySize) * duplicatesRatio))
         
@@ -117,7 +116,6 @@ class SortTest:XCTestCase, Sortable {
         
         print("Start to sort")
         
-//        let sortedArr = quickSort(array: arr)
         let sortedArr = arr.quickSort()
 
         print("shuffled")

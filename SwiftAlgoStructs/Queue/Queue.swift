@@ -8,16 +8,9 @@
 
 import Foundation
 
-// *** Bishop
-
 class Queue<T> {
     
-    private class QueueNode<T> {
-        var key: T?
-        var next: QueueNode?
-    }
-    
-    private var top: QueueNode<T>?
+    private var top: Node<T>?
     private var counter = 0
     
     var isEmpty: Bool {
@@ -30,7 +23,7 @@ class Queue<T> {
     }
     
     init() {
-        top = QueueNode<T>()
+        top = Node<T>()
     }
     
     // enqueue the specified object
@@ -43,7 +36,7 @@ class Queue<T> {
             return
         }
         
-        let childToUse = QueueNode<T>()
+        let childToUse = Node<T>()
         
         var current = top
         
@@ -72,7 +65,7 @@ class Queue<T> {
         if let nextItem = top?.next {
             top = nextItem
         } else {
-            top = QueueNode<T>()
+            top = Node<T>()
         }
         
         counter -= 1

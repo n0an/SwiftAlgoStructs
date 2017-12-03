@@ -8,12 +8,6 @@
 
 import Foundation
 
-class LLNode<T> {
-    var key: T?
-    var next: LLNode?
-    var previous: LLNode?
-}
-
 public class LinkedList<T: Equatable> {
     
     // new instance
@@ -248,8 +242,66 @@ public class LinkedList<T: Equatable> {
         
     }
     
+    //MARK: Closure operations
     
+    /*
+     notes: These "generic methods" mimic the map & filter array
+     functions found in the Swift standard library.
+     */
     
+    //filter list content - higher order function
+    func filter(_ formula: (LLNode<T>) -> Bool) -> LinkedList<T>? {
+        
+        //check for instance
+        guard head.key != nil else {
+            return nil
+        }
+        
+        var current: LLNode! = head
+        let results: LinkedList<T>? = LinkedList<T>()
+        
+        while current != nil {
+            
+            //filter based on formula
+            if formula(current) == true {
+                if let key = current.key {
+                    results?.append(element: key)
+                }
+            }
+            
+            current = current.next
+        }
+        
+        return results
+    }
+    
+    //map list content - higher order function
+    func map(_ formula: (LLNode<T>) -> T) -> LinkedList<T>! {
+        
+        //check for instance
+        guard head.key != nil else {
+            return nil
+        }
+        
+        var current: LLNode! = head
+        let results: LinkedList<T> = LinkedList<T>()
+        var newKey: T!
+        
+        while current != nil {
+            
+            //map based on formula
+            newKey = formula(current)
+            
+            //add non-nil entries
+            if newKey != nil {
+                results.append(element: newKey)
+            }
+            
+            current = current.next
+        }
+        
+        return results
+    }
 }
 
 
