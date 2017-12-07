@@ -60,6 +60,9 @@ class SortTestPrinceton:XCTestCase, Sortable {
         
         let timePassedK100 = sort(arraySize: .k100)
         print("timePassedK100 = \(timePassedK100)")
+        
+        print("k10/k1 = \(Int(timePassedK10/timePassedK1)), k100/k10 = \(Int(timePassedK100/timePassedK10)),")
+
     }
     
     func testQuickSortWithDuplicates() {

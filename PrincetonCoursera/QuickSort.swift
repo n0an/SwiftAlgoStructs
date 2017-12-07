@@ -89,7 +89,7 @@ public class Quick {
         var lt = lo
         var gt = hi
         
-        var v = arr[lo]
+        let v = arr[lo]
         
         var i = lo
         
