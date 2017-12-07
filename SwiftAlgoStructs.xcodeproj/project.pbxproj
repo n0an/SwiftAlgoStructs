@@ -289,11 +289,11 @@
 			isa = PBXGroup;
 			children = (
 				18555E571FC6063900C2293C /* SwiftAlgoStructs */,
+				188760A71FC8962900567042 /* SwiftAlgoStructsTests */,
 				1843B2471FD1383900E9C7E3 /* PrincetonCoursera */,
 				18AA034A1FD3EB4200B0E0BD /* PrincetonCourseraTests */,
 				18902B741FD2AB79006830A5 /* RayAlgorithmsClub */,
 				18D3292A1FD3ED270044B6D3 /* RayAlgorithmsClubTests */,
-				188760A71FC8962900567042 /* SwiftAlgoStructsTests */,
 				18555E561FC6063900C2293C /* Products */,
 			);
 			sourceTree = "<group>";

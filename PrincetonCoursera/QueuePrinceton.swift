@@ -6,8 +6,6 @@
 //  Copyright © 2017 Anton Novoselov. All rights reserved.
 //
 
-import Foundation
-
 class QueuePrinceton<T> {
     
     private class QueueNode<T> {

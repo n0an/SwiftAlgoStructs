@@ -16,6 +16,13 @@ public class Quick {
         return outputArray
     }
     
+    public static func sort3Way<T: Comparable>(arr: [T]) -> [T] {
+        var outputArray = arr
+        sort3Way(arr: &outputArray, lo: 0, hi: arr.count - 1)
+        return outputArray
+    }
+    
+    // *** Sort using Hoare partitioning
     private static func sort<T: Comparable>(arr: inout [T], lo: Int, hi: Int) {
         
         guard hi > lo else { return }
@@ -73,6 +80,34 @@ public class Quick {
         arr.swapAt(lo, j)
         
         return j
+    }
+    
+    // *** Sort using 3-way (Dutch flag) partitioining
+    private static func sort3Way<T: Comparable>(arr: inout [T], lo: Int, hi: Int){
+        guard hi > lo else { return }
+        
+        var lt = lo
+        var gt = hi
+        
+        var v = arr[lo]
+        
+        var i = lo
+        
+        while i <= gt {
+            if arr[i] < v {
+                arr.swapAt(lt, i)
+                lt += 1
+                i += 1
+            } else if arr[i] > v {
+                arr.swapAt(i, gt)
+                gt -= 1
+            } else {
+                i += 1
+            }
+        }
+        
+        sort3Way(arr: &arr, lo: lo, hi: lt - 1)
+        sort3Way(arr: &arr, lo: gt + 1, hi: hi)
     }
     
 }

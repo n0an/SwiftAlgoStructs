@@ -15,3 +15,7 @@ public enum ArraySize: Int {
     case k200 = 200_000
     case m1 = 1_000_000
 }
+
+enum QuickSortType {
+    case typePartitionHoare, type3WayDutch
+}
