@@ -66,7 +66,7 @@ class SortTestRay:XCTestCase, Sortable {
         
         let timePassed = Date().timeIntervalSince(start)
         
-        XCTAssertTrue(isSorted(sortedArr))
+        XCTAssertTrue(isSorted(shuffledArrayToSort))
         
         return timePassed
     }
