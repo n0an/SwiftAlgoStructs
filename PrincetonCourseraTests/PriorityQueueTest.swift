@@ -12,7 +12,7 @@ import XCTest
 @testable import PrincetonCoursera
 
 class PriorityQueueTest: XCTestCase {
-    func testPQDelMax() {
+    func testUnorderedMaxPQDelMax() {
 
         let queue = UnorderedArrayMaxPQ<String>()
 
@@ -23,5 +23,31 @@ class PriorityQueueTest: XCTestCase {
         let result = queue.delMax()
         
         XCTAssertEqual(result, "Q")
+    }
+    
+    // Binary Heap using MaxPG
+    func testHeapDelMax() {
+        
+        let queue = MaxPQ<String>()
+        
+        queue.insert(x: "T")
+        queue.insert(x: "S")
+        queue.insert(x: "R")
+        queue.insert(x: "N")
+        queue.insert(x: "P")
+        queue.insert(x: "O")
+        queue.insert(x: "A")
+        queue.insert(x: "E")
+        queue.insert(x: "I")
+        queue.insert(x: "G")
+        queue.insert(x: "H")
+        
+        print(queue.pqArray)
+        
+        let result = queue.delMax()
+        
+        print(queue.pqArray)
+
+        XCTAssertEqual(result, "T")
     }
 }

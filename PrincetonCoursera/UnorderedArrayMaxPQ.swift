@@ -1,5 +1,5 @@
 //
-//  PriorityQueue.swift
+//  UnorderedArrayMaxPQ.swift
 //  PrincetonCoursera
 //
 //  Created by Anton Novoselov on 08/12/2017.
@@ -12,10 +12,6 @@ public class UnorderedArrayMaxPQ<T: Comparable> {
     
     private var pq = [T]()
     private var N = 0
-    
-//    init(capacity: Int, element: T) {
-//        self.pq = Array<T>.init(repeating: element, count: capacity)
-//    }
     
     public func isEmpty() -> Bool {
         return N == 0
