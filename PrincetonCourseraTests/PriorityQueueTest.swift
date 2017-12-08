@@ -12,9 +12,10 @@ import XCTest
 @testable import PrincetonCoursera
 
 class PriorityQueueTest: XCTestCase {
-    func testQLLEmpty() {
-        let queue = UnorderedArrayMaxPQ<String>(capacity: 100, element: "")
-        
+    func testPQDelMax() {
+
+        let queue = UnorderedArrayMaxPQ<String>()
+
         queue.insert(x: "P")
         queue.insert(x: "Q")
         queue.insert(x: "E")

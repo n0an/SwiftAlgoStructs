@@ -10,19 +10,19 @@ import Foundation
 
 public class UnorderedArrayMaxPQ<T: Comparable> {
     
-    private var pq: [T] = []
+    private var pq = [T]()
     private var N = 0
     
-    init(capacity: Int, element: T) {
-        self.pq = Array<T>.init(repeating: element, count: capacity)
-    }
+//    init(capacity: Int, element: T) {
+//        self.pq = Array<T>.init(repeating: element, count: capacity)
+//    }
     
     public func isEmpty() -> Bool {
         return N == 0
     }
     
     public func insert(x: T) {
-        pq[N] = x
+        pq.append(x)
         N += 1
     }
     
