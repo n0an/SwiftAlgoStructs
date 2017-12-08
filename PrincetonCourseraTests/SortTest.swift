@@ -20,9 +20,12 @@ class SortTest:XCTestCase, Sortable {
     
     let quickSortTypeToTest = QuickSortType.type3WayDutch
     
+    // === QUICK SORT ===
+
     // O(n log n)
     func testQuickSort() {
-        
+        print("--- testQuickSort ---")
+
         let timePassedK1 = sort(arraySize: .k1)
         print("timePassedK1 = \(timePassedK1)")
 
@@ -32,12 +35,16 @@ class SortTest:XCTestCase, Sortable {
         let timePassedK100 = sort(arraySize: .k100)
         print("timePassedK100 = \(timePassedK100)")
         
-        print("k10/k1 = \(Int(timePassedK10/timePassedK1)), k100/k10 = \(Int(timePassedK100/timePassedK10)),")
+        let grade1 = String(format: "%.02f", Float(timePassedK10/timePassedK1))
+        let grade2 = String(format: "%.02f", Float(timePassedK100/timePassedK10))
+        
+        print("k10/k1 = \(grade1), k100/k10 = \(grade2)")
 
     }
     
     // O(n log n)
     func testQuickSortWithDuplicates() {
+        print("--- testQuickSortWithDuplicates ---")
         
         let timePassedK1 = sortWithDuplicates(arraySize: .k1)
         print("timePassedK1 = \(timePassedK1)")
@@ -48,24 +55,45 @@ class SortTest:XCTestCase, Sortable {
         let timePassedK100 = sortWithDuplicates(arraySize: .k100)
         print("timePassedK100 = \(timePassedK100)")
         
-        print("k10/k1 = \(Int(timePassedK10/timePassedK1)), k100/k10 = \(Int(timePassedK100/timePassedK10)),")
+        let grade1 = String(format: "%.02f", Float(timePassedK10/timePassedK1))
+        let grade2 = String(format: "%.02f", Float(timePassedK100/timePassedK10))
+        
+        print("k10/k1 = \(grade1), k100/k10 = \(grade2)")
     }
     
     func testQuickSortAlreadySortedArray() {
-        
+        print("--- testQuickSortAlreadySortedArray ---")
+
         let timePassedK1 = sortAlreadySorted(arraySize: .k1)
         print("timePassedK1 = \(timePassedK1)")
         
-        let timePassedK10 = sortAlreadySorted(arraySize: .k10)
-        print("timePassedK10 = \(timePassedK10)")
+        let timePassedK2 = sortAlreadySorted(arraySize: .k2)
+        print("timePassedK2 = \(timePassedK2)")
         
-        let timePassedK100 = sortAlreadySorted(arraySize: .k100)
-        print("timePassedK100 = \(timePassedK100)")
+        let timePassedK4 = sortAlreadySorted(arraySize: .k4)
+        print("timePassedK4 = \(timePassedK4)")
         
-        print("k10/k1 = \(Int(timePassedK10/timePassedK1)), k100/k10 = \(Int(timePassedK100/timePassedK10)),")
+        let grade1 = String(format: "%.02f", Float(timePassedK2/timePassedK1))
+        let grade2 = String(format: "%.02f", Float(timePassedK4/timePassedK2))
+
+        print("k2/k1 = \(grade1), k4/k2 = \(grade2)")
     }
     
-    // MARK: - HELPER METHODS
+    // === HEAP SORT ===
+    func testHeapSort() {
+        print("--- testHeapSort ---")
+
+        var arr: [String?] = "SORTEXAMPLE".map { String($0) }
+        
+        Heap.sort(a: &arr)
+        
+        print(Heap.showArray(&arr))
+        
+        XCTAssertEqual(Heap.showArray(&arr), "AEELMOPRSTX")
+        
+    }
+    
+    // MARK: - HELPER METHODS FOR QUICKSORT
     func sort(arraySize: ArraySize) -> TimeInterval {
         
         let arrayToSort = Array(1...arraySize.rawValue)

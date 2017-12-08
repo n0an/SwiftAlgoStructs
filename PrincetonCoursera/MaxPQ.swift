@@ -14,8 +14,14 @@ public class MaxPQ<T: Comparable> {
     private var pq = [T?]()
     private var N = 0
     
-    public var pqArray: [T?] {
-        return self.pq
+    public func showPQ() -> String {
+        var str = ""
+        for element in pq {
+            if let element = element {
+                str += "\(element) "
+            }
+        }
+        return str
     }
     
     public func isEmpty() -> Bool {
@@ -35,7 +41,7 @@ public class MaxPQ<T: Comparable> {
     public func delMax() -> T? {
         
         let max = pq[1]
-        
+
         exch(1, N)
         
         N -= 1

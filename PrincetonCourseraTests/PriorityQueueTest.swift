@@ -41,12 +41,12 @@ class PriorityQueueTest: XCTestCase {
         queue.insert(x: "I")
         queue.insert(x: "G")
         queue.insert(x: "H")
-        
-        print(queue.pqArray)
+
+        print(queue.showPQ())
         
         let result = queue.delMax()
         
-        print(queue.pqArray)
+        print(queue.showPQ())
 
         XCTAssertEqual(result, "T")
     }

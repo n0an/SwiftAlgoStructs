@@ -9,6 +9,7 @@
 public enum ArraySize: Int {
     case k1 = 1000
     case k2 = 2000
+    case k4 = 4000
     case k10 = 10_000
     case k20 = 20_000
     case k100 = 100_000

@@ -64,6 +64,7 @@
 		18F982841FDA7BF900E5D631 /* PriorityQueueTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F982831FDA7BF900E5D631 /* PriorityQueueTest.swift */; };
 		18F982851FDA80CA00E5D631 /* StackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC311FCAAE2F00ECFF31 /* StackTest.swift */; };
 		18F982871FDA891B00E5D631 /* MaxPQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F982861FDA891B00E5D631 /* MaxPQ.swift */; };
+		18F982891FDB1C2F00E5D631 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F982881FDB1C2F00E5D631 /* Heap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -179,6 +180,7 @@
 		18F982811FDA78C200E5D631 /* UnorderedArrayMaxPQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnorderedArrayMaxPQ.swift; sourceTree = "<group>"; };
 		18F982831FDA7BF900E5D631 /* PriorityQueueTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueueTest.swift; sourceTree = "<group>"; };
 		18F982861FDA891B00E5D631 /* MaxPQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxPQ.swift; sourceTree = "<group>"; };
+		18F982881FDB1C2F00E5D631 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +287,7 @@
 			children = (
 				18F982811FDA78C200E5D631 /* UnorderedArrayMaxPQ.swift */,
 				18F982861FDA891B00E5D631 /* MaxPQ.swift */,
+				18F982881FDB1C2F00E5D631 /* Heap.swift */,
 				18B2AC291FC955DC00ECFF31 /* StackLinkedList.swift */,
 				18B2AC3A1FCAB60600ECFF31 /* QueuePrinceton.swift */,
 				1843B2531FD1385A00E9C7E3 /* QuickSort.swift */,
@@ -672,6 +675,7 @@
 				18AA03411FD3E50600B0E0BD /* QueuePrinceton.swift in Sources */,
 				18F982821FDA78C200E5D631 /* UnorderedArrayMaxPQ.swift in Sources */,
 				18AA03441FD3E5AD00B0E0BD /* StackLinkedList.swift in Sources */,
+				18F982891FDB1C2F00E5D631 /* Heap.swift in Sources */,
 				18F982871FDA891B00E5D631 /* MaxPQ.swift in Sources */,
 				1843B2541FD1385A00E9C7E3 /* QuickSort.swift in Sources */,
 			);
