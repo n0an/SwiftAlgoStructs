@@ -1,5 +1,5 @@
 //
-//  StackTestRay.swift
+//  StackTest.swift
 //  SwiftAlgoStructsTests
 //
 //  Created by Anton Novoselov on 26/11/2017.
@@ -11,7 +11,7 @@ import XCTest
 
 @testable import PrincetonCoursera
 
-class StackTestRay: XCTestCase {
+class StackTest: XCTestCase {
     
     func testLLStackEmpty() {
         let linkedListStack = StackLinkedList<Int>()

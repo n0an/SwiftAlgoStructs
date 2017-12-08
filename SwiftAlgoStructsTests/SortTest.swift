@@ -27,7 +27,9 @@ class SortTest:XCTestCase, Sortable {
     var triviaTextList = ["Dog"]
     var emptyTextList: Array<String> = []
     
-    let duplicatesRatio = 1.0
+    let duplicatesRatio = 0.9
+    
+    let quickSortTypeToTest = QuickSortType.typePartitionHoare
     
     override func setUp() {
         super.setUp()
@@ -42,95 +44,129 @@ class SortTest:XCTestCase, Sortable {
         XCTAssertTrue(isSorted(textList.quickSort()))
         XCTAssertTrue(isSorted(triviaTextList.quickSort()))
         XCTAssertTrue(isSorted(emptyTextList.quickSort()))
-        
     }
     
     func testQuickSort() {
         
-        let arrayToSort = Array(1...ArraySize.k10.rawValue)
-
-        var shuffledArray = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: arrayToSort) as! [Int]
+        let timePassedK1 = sort(arraySize: .k1)
+        print("timePassedK1 = \(timePassedK1)")
         
-        let start = Date()
+        let timePassedK10 = sort(arraySize: .k10)
+        print("timePassedK10 = \(timePassedK10)")
         
-        print("Start to sort")
+        let timePassedK100 = sort(arraySize: .k100)
+        print("timePassedK100 = \(timePassedK100)")
         
-        let sortedArr = shuffledArray.quickSort()
-
-        print("shuffled")
-        
-        let timePassed = Date().timeIntervalSince(start)
-        
-        print("timePassed = \(timePassed)")
-        
-        XCTAssertTrue(isSorted(sortedArr))
-        
-        // O(n log n)
-        // 1000     - 0.008
-        // 10_000    - 0.083
-        // 100_000   - 0.956
-        // 1_000_000  - 11.570
+        print("k10/k1 = \(Int(timePassedK10/timePassedK1)), k100/k10 = \(Int(timePassedK100/timePassedK10)),")
         
     }
     
+    // O(n log n)
     func testQuickSortWithDuplicates() {
         
-        let arraySize = ArraySize.k100.rawValue
+        let timePassedK1 = sortWithDuplicates(arraySize: .k1)
+        print("timePassedK1 = \(timePassedK1)")
         
-        let arrWithDuplicates = Array<Int>(repeating: 100, count: Int(Double(arraySize) * duplicatesRatio))
+        let timePassedK10 = sortWithDuplicates(arraySize: .k10)
+        print("timePassedK10 = \(timePassedK10)")
+        
+        let timePassedK100 = sortWithDuplicates(arraySize: .k100)
+        print("timePassedK100 = \(timePassedK100)")
+        
+        print("k10/k1 = \(Int(timePassedK10/timePassedK1)), k100/k10 = \(Int(timePassedK100/timePassedK10)),")
+    }
+    
+    func testQuickSortAlreadySortedArray() {
+        
+        let timePassedK1 = sortAlreadySorted(arraySize: .k1)
+        print("timePassedK1 = \(timePassedK1)")
+        
+        let timePassedK10 = sortAlreadySorted(arraySize: .k10)
+        print("timePassedK10 = \(timePassedK10)")
+        
+        let timePassedK100 = sortAlreadySorted(arraySize: .k100)
+        print("timePassedK100 = \(timePassedK100)")
+        
+        print("k10/k1 = \(Int(timePassedK10/timePassedK1)), k100/k10 = \(Int(timePassedK100/timePassedK10)),")
+    }
+    
+    
+    // MARK: - HELPER METHODS
+    func sort(arraySize: ArraySize) -> TimeInterval {
+        
+        let arrayToSort = Array(1...arraySize.rawValue)
+        
+        var shuffledArrayToSort = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: arrayToSort) as! [Int]
+        
+        let start = Date()
+        
+        var sortedArr: [Int] = []
+        
+        switch quickSortTypeToTest {
+        case .typePartitionHoare:
+            sortedArr = shuffledArrayToSort.quickSort()
+        case .type3WayDutch:
+            break
+        }
+        
+        let timePassed = Date().timeIntervalSince(start)
+        
+        XCTAssertTrue(isSorted(sortedArr))
+        
+        return timePassed
+    }
+    
+    func sortWithDuplicates(arraySize: ArraySize) -> TimeInterval {
+        
+        let arrWithDuplicates = Array<Int>(repeating: 100, count: Int(Double(arraySize.rawValue) * duplicatesRatio))
         
         var arrNonDuplicates = [Int]()
         if duplicatesRatio != 1.0 {
-            arrNonDuplicates = Array(101...100 + arraySize - arrWithDuplicates.count)
+            arrNonDuplicates = Array(101...100 + arraySize.rawValue - arrWithDuplicates.count)
         }
         
         let arr = arrWithDuplicates + arrNonDuplicates
         
-        var shuffledArray = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: arr) as! [Int]
+        var shuffledArrayToSort = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: arr) as! [Int]
         
         let start = Date()
         
-        print("Start to sort")
+        var sortedArr: [Int] = []
         
-        let sortedArr = shuffledArray.quickSort()
-
-        print("shuffled")
+        switch quickSortTypeToTest {
+        case .typePartitionHoare:
+            sortedArr = shuffledArrayToSort.quickSort()
+        case .type3WayDutch:
+            break
+        }
         
         let timePassed = Date().timeIntervalSince(start)
         
-        print("timePassed = \(timePassed)")
-        
         XCTAssertTrue(isSorted(sortedArr))
         
-        // O(n log n)
-        // 1000     - 0.089
-        // 2000     - 0.425
-        // 10_000    - 8.796
-        
+        return timePassed
     }
     
-    func testQuickSortAlreadySortedArray() {
-        var arr = Array(1...ArraySize.k1.rawValue)
-
+    func sortAlreadySorted(arraySize: ArraySize) -> TimeInterval {
+        
+        var arr = Array(1...arraySize.rawValue)
+        
         let start = Date()
         
-        print("Start to sort")
+        var sortedArr: [Int] = []
         
-        let sortedArr = arr.quickSort()
-
-        print("shuffled")
+        switch quickSortTypeToTest {
+        case .typePartitionHoare:
+            sortedArr = arr.quickSort()
+        case .type3WayDutch:
+            break
+        }
         
         let timePassed = Date().timeIntervalSince(start)
         
-        print("timePassed = \(timePassed)")
-        
         XCTAssertTrue(isSorted(sortedArr))
         
-        // O(n²)
-        // 1000     - 0.131
-        // 2000     - 0.398
-        // 10_000    - 8.918
-        
+        return timePassed
     }
     
 }

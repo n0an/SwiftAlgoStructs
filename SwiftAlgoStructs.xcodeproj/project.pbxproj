@@ -53,16 +53,16 @@
 		18C55D3A1FCBEBB300870A51 /* BSNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C55D391FCBEBB300870A51 /* BSNode.swift */; };
 		18C55D3C1FCBECC700870A51 /* BSTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C55D3B1FCBECC700870A51 /* BSTree.swift */; };
 		18D3291D1FD3EC6C0044B6D3 /* QueueTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D3291C1FD3EC6C0044B6D3 /* QueueTest.swift */; };
-		18D3291E1FD3EC990044B6D3 /* SortTestPrinceton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843B2571FD13DE800E9C7E3 /* SortTestPrinceton.swift */; };
+		18D3291E1FD3EC990044B6D3 /* SortTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843B2571FD13DE800E9C7E3 /* SortTest.swift */; };
 		18D329231FD3ECC70044B6D3 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155940731FD1647100EFBDCD /* Enums.swift */; };
 		18D329241FD3ECCB0044B6D3 /* Sortable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843B25C1FD13F1800E9C7E3 /* Sortable.swift */; };
 		18D3292E1FD3ED270044B6D3 /* RayAlgorithmsClub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18902B731FD2AB79006830A5 /* RayAlgorithmsClub.framework */; };
-		18D329341FD3ED340044B6D3 /* SortTestRay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902B811FD2ACBB006830A5 /* SortTestRay.swift */; };
-		18D329351FD3ED340044B6D3 /* StackTestRay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC311FCAAE2F00ECFF31 /* StackTestRay.swift */; };
+		18D329341FD3ED340044B6D3 /* SortTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902B811FD2ACBB006830A5 /* SortTest.swift */; };
 		18D329361FD3ED3B0044B6D3 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155940731FD1647100EFBDCD /* Enums.swift */; };
 		18D329371FD3ED3D0044B6D3 /* Sortable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843B25C1FD13F1800E9C7E3 /* Sortable.swift */; };
 		18F982821FDA78C200E5D631 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F982811FDA78C200E5D631 /* PriorityQueue.swift */; };
 		18F982841FDA7BF900E5D631 /* PriorityQueueTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F982831FDA7BF900E5D631 /* PriorityQueueTest.swift */; };
+		18F982851FDA80CA00E5D631 /* StackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC311FCAAE2F00ECFF31 /* StackTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,7 +139,7 @@
 		1843B2491FD1383900E9C7E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1843B2531FD1385A00E9C7E3 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 		1843B2551FD1387600E9C7E3 /* SortTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortTest.swift; sourceTree = "<group>"; };
-		1843B2571FD13DE800E9C7E3 /* SortTestPrinceton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortTestPrinceton.swift; sourceTree = "<group>"; };
+		1843B2571FD13DE800E9C7E3 /* SortTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortTest.swift; sourceTree = "<group>"; };
 		1843B25C1FD13F1800E9C7E3 /* Sortable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sortable.swift; sourceTree = "<group>"; };
 		18555E551FC6063900C2293C /* SwiftAlgoStructs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAlgoStructs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18555E581FC6063900C2293C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 		18902B731FD2AB79006830A5 /* RayAlgorithmsClub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RayAlgorithmsClub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18902B761FD2AB79006830A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18902B7F1FD2AB8E006830A5 /* Quicksort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quicksort.swift; sourceTree = "<group>"; };
-		18902B811FD2ACBB006830A5 /* SortTestRay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortTestRay.swift; sourceTree = "<group>"; };
+		18902B811FD2ACBB006830A5 /* SortTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortTest.swift; sourceTree = "<group>"; };
 		18AA033F1FD3E2CC00B0E0BD /* LLNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLNode.swift; sourceTree = "<group>"; };
 		18AA03421FD3E52800B0E0BD /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		18AA03491FD3EB4200B0E0BD /* PrincetonCourseraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrincetonCourseraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,7 +166,7 @@
 		18B2AC291FC955DC00ECFF31 /* StackLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackLinkedList.swift; sourceTree = "<group>"; };
 		18B2AC2C1FCAA5D700ECFF31 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		18B2AC2F1FCAA9CE00ECFF31 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
-		18B2AC311FCAAE2F00ECFF31 /* StackTestRay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTestRay.swift; sourceTree = "<group>"; };
+		18B2AC311FCAAE2F00ECFF31 /* StackTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTest.swift; sourceTree = "<group>"; };
 		18B2AC331FCAAFFE00ECFF31 /* StackTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTest.swift; sourceTree = "<group>"; };
 		18B2AC381FCAB50E00ECFF31 /* QueueTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueTest.swift; sourceTree = "<group>"; };
 		18B2AC3A1FCAB60600ECFF31 /* QueuePrinceton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueuePrinceton.swift; sourceTree = "<group>"; };
@@ -370,7 +370,8 @@
 			children = (
 				18D3291C1FD3EC6C0044B6D3 /* QueueTest.swift */,
 				18F982831FDA7BF900E5D631 /* PriorityQueueTest.swift */,
-				1843B2571FD13DE800E9C7E3 /* SortTestPrinceton.swift */,
+				18B2AC311FCAAE2F00ECFF31 /* StackTest.swift */,
+				1843B2571FD13DE800E9C7E3 /* SortTest.swift */,
 				18AA034D1FD3EB4200B0E0BD /* Info.plist */,
 			);
 			path = PrincetonCourseraTests;
@@ -414,8 +415,7 @@
 		18D3292A1FD3ED270044B6D3 /* RayAlgorithmsClubTests */ = {
 			isa = PBXGroup;
 			children = (
-				18902B811FD2ACBB006830A5 /* SortTestRay.swift */,
-				18B2AC311FCAAE2F00ECFF31 /* StackTestRay.swift */,
+				18902B811FD2ACBB006830A5 /* SortTest.swift */,
 				18D3292D1FD3ED270044B6D3 /* Info.plist */,
 			);
 			path = RayAlgorithmsClubTests;
@@ -733,10 +733,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				18F982841FDA7BF900E5D631 /* PriorityQueueTest.swift in Sources */,
-				18D3291E1FD3EC990044B6D3 /* SortTestPrinceton.swift in Sources */,
+				18D3291E1FD3EC990044B6D3 /* SortTest.swift in Sources */,
 				18D329241FD3ECCB0044B6D3 /* Sortable.swift in Sources */,
 				18D329231FD3ECC70044B6D3 /* Enums.swift in Sources */,
 				18D3291D1FD3EC6C0044B6D3 /* QueueTest.swift in Sources */,
+				18F982851FDA80CA00E5D631 /* StackTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,10 +745,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18D329341FD3ED340044B6D3 /* SortTestRay.swift in Sources */,
+				18D329341FD3ED340044B6D3 /* SortTest.swift in Sources */,
 				18D329361FD3ED3B0044B6D3 /* Enums.swift in Sources */,
 				18D329371FD3ED3D0044B6D3 /* Sortable.swift in Sources */,
-				18D329351FD3ED340044B6D3 /* StackTestRay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

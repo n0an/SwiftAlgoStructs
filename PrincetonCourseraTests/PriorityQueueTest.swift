@@ -22,7 +22,5 @@ class PriorityQueueTest: XCTestCase {
         let result = queue.delMax()
         
         XCTAssertEqual(result, "Q")
-        
     }
-    
 }
