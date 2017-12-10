@@ -53,7 +53,7 @@
 		18C55D3A1FCBEBB300870A51 /* BSNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C55D391FCBEBB300870A51 /* BSNode.swift */; };
 		18C55D3C1FCBECC700870A51 /* BSTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C55D3B1FCBECC700870A51 /* BSTree.swift */; };
 		18D3291D1FD3EC6C0044B6D3 /* QueueTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D3291C1FD3EC6C0044B6D3 /* QueueTest.swift */; };
-		18D3291E1FD3EC990044B6D3 /* SortTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843B2571FD13DE800E9C7E3 /* SortTest.swift */; };
+		18D3291E1FD3EC990044B6D3 /* QuickSortTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843B2571FD13DE800E9C7E3 /* QuickSortTest.swift */; };
 		18D329231FD3ECC70044B6D3 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155940731FD1647100EFBDCD /* Enums.swift */; };
 		18D329241FD3ECCB0044B6D3 /* Sortable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843B25C1FD13F1800E9C7E3 /* Sortable.swift */; };
 		18D3292E1FD3ED270044B6D3 /* RayAlgorithmsClub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18902B731FD2AB79006830A5 /* RayAlgorithmsClub.framework */; };
@@ -67,6 +67,7 @@
 		18F982891FDB1C2F00E5D631 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F982881FDB1C2F00E5D631 /* Heap.swift */; };
 		18F9828B1FDC749400E5D631 /* BSTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9828A1FDC749400E5D631 /* BSTree.swift */; };
 		18F9828D1FDDB2E700E5D631 /* BSTTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9828C1FDDB2E700E5D631 /* BSTTest.swift */; };
+		18F9828F1FDDC1D300E5D631 /* HeapSortTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9828E1FDDC1D300E5D631 /* HeapSortTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,7 +144,7 @@
 		1843B2491FD1383900E9C7E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1843B2531FD1385A00E9C7E3 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 		1843B2551FD1387600E9C7E3 /* SortTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortTest.swift; sourceTree = "<group>"; };
-		1843B2571FD13DE800E9C7E3 /* SortTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortTest.swift; sourceTree = "<group>"; };
+		1843B2571FD13DE800E9C7E3 /* QuickSortTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSortTest.swift; sourceTree = "<group>"; };
 		1843B25C1FD13F1800E9C7E3 /* Sortable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sortable.swift; sourceTree = "<group>"; };
 		18555E551FC6063900C2293C /* SwiftAlgoStructs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAlgoStructs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18555E581FC6063900C2293C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -185,6 +186,7 @@
 		18F982881FDB1C2F00E5D631 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		18F9828A1FDC749400E5D631 /* BSTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTree.swift; sourceTree = "<group>"; };
 		18F9828C1FDDB2E700E5D631 /* BSTTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTTest.swift; sourceTree = "<group>"; };
+		18F9828E1FDDC1D300E5D631 /* HeapSortTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSortTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -383,7 +385,8 @@
 				18F9828C1FDDB2E700E5D631 /* BSTTest.swift */,
 				18F982831FDA7BF900E5D631 /* PriorityQueueTest.swift */,
 				18B2AC311FCAAE2F00ECFF31 /* StackTest.swift */,
-				1843B2571FD13DE800E9C7E3 /* SortTest.swift */,
+				1843B2571FD13DE800E9C7E3 /* QuickSortTest.swift */,
+				18F9828E1FDDC1D300E5D631 /* HeapSortTest.swift */,
 				18AA034D1FD3EB4200B0E0BD /* Info.plist */,
 			);
 			path = PrincetonCourseraTests;
@@ -748,8 +751,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				18F982841FDA7BF900E5D631 /* PriorityQueueTest.swift in Sources */,
-				18D3291E1FD3EC990044B6D3 /* SortTest.swift in Sources */,
+				18D3291E1FD3EC990044B6D3 /* QuickSortTest.swift in Sources */,
 				18D329241FD3ECCB0044B6D3 /* Sortable.swift in Sources */,
+				18F9828F1FDDC1D300E5D631 /* HeapSortTest.swift in Sources */,
 				18D329231FD3ECC70044B6D3 /* Enums.swift in Sources */,
 				18D3291D1FD3EC6C0044B6D3 /* QueueTest.swift in Sources */,
 				18F982851FDA80CA00E5D631 /* StackTest.swift in Sources */,

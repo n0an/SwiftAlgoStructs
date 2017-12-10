@@ -1,5 +1,5 @@
 //
-//  SortTest.swift
+//  QuickSortTest.swift
 //  SwiftAlgoStructsTests
 //
 //  Created by Anton Novoselov on 01/12/2017.
@@ -14,7 +14,7 @@ import GameKit
 
 @testable import PrincetonCoursera
 
-class SortTest:XCTestCase, Sortable {
+class QuickSortTest:XCTestCase, Sortable {
     
     let duplicatesRatio = 0.9
     
@@ -79,19 +79,6 @@ class SortTest:XCTestCase, Sortable {
         print("k2/k1 = \(grade1), k4/k2 = \(grade2)")
     }
     
-    // === HEAP SORT ===
-    func testHeapSort() {
-        print("--- testHeapSort ---")
-
-        var arr: [String?] = "SORTEXAMPLE".map { String($0) }
-        
-        Heap.sort(a: &arr)
-        
-        print(Heap.showArray(&arr))
-        
-        XCTAssertEqual(Heap.showArray(&arr), "AEELMOPRSTX")
-        
-    }
     
     // MARK: - HELPER METHODS FOR QUICKSORT
     func sort(arraySize: ArraySize) -> TimeInterval {

@@ -83,6 +83,7 @@ public class BST<Key: Comparable, Value> {
         }
     }
 
+    // Non recursive Get
 //    public func get(key: Key) -> Value? {
 //        var x = root
 //
@@ -166,6 +167,7 @@ public class BST<Key: Comparable, Value> {
     
     // --- Floor ---
     public func floor(key: Key) -> Key? {
+        print("floor")
         guard let x = floor(root, key) else { return nil }
         
         return x.key
@@ -249,8 +251,6 @@ public class BST<Key: Comparable, Value> {
         
         printOut(x.right)
     }
-    
-    
     
     // --- Iterator 1
     func makeIterator() -> Queue<Key> {

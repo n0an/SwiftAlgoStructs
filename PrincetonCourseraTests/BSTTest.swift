@@ -81,11 +81,57 @@ class BSTTest: XCTestCase {
         XCTAssertTrue(bst.get(key: "A") == 2)
     }
     
+    func testBSTDeleteMin() {
+        
+        let minBeforeDeletion = bst.get(key: "A")
+        XCTAssertNotNil(minBeforeDeletion)
+        bst.deleteMin()
+        
+        let minAfterDeletion = bst.get(key: "A")
+        bst.printOut(bst.root)
+        XCTAssertNil(minAfterDeletion)
+    }
+    
+    func testBSTDelete() {
+        bst.delete(key: "R")
+        XCTAssertNil(bst.get(key: "R"))
+    }
+    
+    func testBSTMinMax() {
+        XCTAssertEqual(bst.min(), "A")
+        XCTAssertEqual(bst.max(), "X")
+    }
+    
+    func testBSTSelect() {
+        
+        for i in 0 ..< bst.size() {
+            print(bst.select(i))
+        }
+    }
+    
+    func testBSTRank() {
+        
+        let iterator = bst.getIterator()
+        
+        for elem in iterator {
+            print("key, rank = \(elem, bst.rank(key: elem))")
+        }
+    }
+    
+    func testBSTFloor() {
+        
+        let iterator = bst.getIterator()
+        
+        for elem in iterator {
+            print("key, floor = \(elem, bst.floor(key: elem))")
+        }
+    }
+    
     func testBSTIterator() {
         
-        let iterator2 = bst.getIterator()
+        let iterator = bst.getIterator()
         
-        for elem in iterator2 {
+        for elem in iterator {
             print(elem)
         }
     }
