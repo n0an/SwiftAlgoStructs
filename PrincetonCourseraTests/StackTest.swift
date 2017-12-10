@@ -13,15 +13,15 @@ import XCTest
 
 class StackTest: XCTestCase {
     
-    func testLLStackEmpty() {
-        let linkedListStack = StackLinkedList<Int>()
+    func testStackEmpty() {
+        let linkedListStack = Stack<Int>()
         XCTAssertTrue(linkedListStack.isEmpty())
         XCTAssertEqual(linkedListStack.count, 0)
         XCTAssertNil(linkedListStack.pop())
     }
     
-    func testOneElementLLStack() {
-        let stack = StackLinkedList<Int>()
+    func testOneElementStack() {
+        let stack = Stack<Int>()
         
         stack.push(item: 123)
         XCTAssertFalse(stack.isEmpty())
@@ -34,8 +34,8 @@ class StackTest: XCTestCase {
         XCTAssertNil(stack.pop())
     }
     
-    func testTwoElementsLLStack() {
-        let stack = StackLinkedList<Int>()
+    func testTwoElementsStack() {
+        let stack = Stack<Int>()
         
         stack.push(item: 123)
         stack.push(item: 456)
@@ -54,8 +54,8 @@ class StackTest: XCTestCase {
         XCTAssertNil(stack.pop())
     }
     
-    func testMakeEmptyLLStack() {
-        let stack = StackLinkedList<Int>()
+    func testMakeEmptyStack() {
+        let stack = Stack<Int>()
         
         stack.push(item: 123)
         stack.push(item: 456)

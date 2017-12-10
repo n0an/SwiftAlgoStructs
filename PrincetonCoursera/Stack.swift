@@ -10,7 +10,7 @@ import Foundation
 
 // Stack using LinkedList
 
-public class StackLinkedList<T> {
+public class Stack<T> {
     
     private class LLNodeS<T> {
         var value: T

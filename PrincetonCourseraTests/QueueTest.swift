@@ -12,16 +12,16 @@ import XCTest
 @testable import PrincetonCoursera
 
 class QueueTest: XCTestCase {
-    func testQLLEmpty() {
-        let queue = QueuePrinceton<Int>()
+    func testQueueEmpty() {
+        let queue = Queue<Int>()
         XCTAssertTrue(queue.isEmpty)
         XCTAssertEqual(queue.count, 0)
         XCTAssertEqual(queue.front, nil)
         XCTAssertNil(queue.dequeue())
     }
     
-    func testQLLOneElement() {
-        let queue = QueuePrinceton<Int>()
+    func testQueueOneElement() {
+        let queue = Queue<Int>()
         
         queue.enqueue(item: 123)
         XCTAssertFalse(queue.isEmpty)
@@ -35,8 +35,8 @@ class QueueTest: XCTestCase {
         XCTAssertEqual(queue.front, nil)
     }
     
-    func testQLLTwoElements() {
-        let queue = QueuePrinceton<Int>()
+    func testQueuewoElements() {
+        let queue = Queue<Int>()
         
         queue.enqueue(item: 123)
         queue.enqueue(item: 456)
@@ -57,8 +57,8 @@ class QueueTest: XCTestCase {
         XCTAssertEqual(queue.front, nil)
     }
     
-    func testQLLMakeEmpty() {
-        let queue = QueuePrinceton<Int>()
+    func testQueueMakeEmpty() {
+        let queue = Queue<Int>()
         
         queue.enqueue(item: 123)
         queue.enqueue(item: 456)
@@ -76,6 +76,27 @@ class QueueTest: XCTestCase {
         XCTAssertEqual(queue.count, 0)
         XCTAssertEqual(queue.front, nil)
     }
-}
+    
+    func testQueueIterator() {
+        let queue = Queue<String>()
+        
+        queue.enqueue(item: "S")
+        queue.enqueue(item: "E")
+        queue.enqueue(item: "A")
+        queue.enqueue(item: "R")
+        queue.enqueue(item: "C")
+        queue.enqueue(item: "H")
+        queue.enqueue(item: "E")
+        queue.enqueue(item: "X")
+        queue.enqueue(item: "A")
+        queue.enqueue(item: "M")
+        queue.enqueue(item: "P")
+        queue.enqueue(item: "L")
+        queue.enqueue(item: "E")
 
+        for elem in queue {
+            print(elem)
+        }
+    }
+}
 

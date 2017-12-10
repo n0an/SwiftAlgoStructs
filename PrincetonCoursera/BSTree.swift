@@ -253,18 +253,18 @@ public class BST<Key: Comparable, Value> {
     
     
     // --- Iterator 1
-    func makeIterator() -> QueuePrinceton<Key> {
+    func makeIterator() -> Queue<Key> {
         return keys(min(), max())
         
     }
     
-    func keys(_ lo: Key, _ hi: Key) -> QueuePrinceton<Key> {
-        let queue = QueuePrinceton<Key>()
+    func keys(_ lo: Key, _ hi: Key) -> Queue<Key> {
+        let queue = Queue<Key>()
         keys(root, queue, lo, hi)
         return queue
     }
     
-    private func keys(_ x: Node?, _ queue: QueuePrinceton<Key>, _ lo: Key, _ hi: Key) {
+    private func keys(_ x: Node?, _ queue: Queue<Key>, _ lo: Key, _ hi: Key) {
         guard let x = x else { return }
         if lo < x.key {
             keys(x.left, queue, lo, hi)
@@ -278,13 +278,13 @@ public class BST<Key: Comparable, Value> {
     }
     
     // --- Iterator 2
-    private func getIterator() -> QueuePrinceton<Key> {
-        let q = QueuePrinceton<Key>()
+    private func getIterator() -> Queue<Key> {
+        let q = Queue<Key>()
         inorder(root, q)
         return q
     }
     
-    private func inorder(_ x: Node?, _ q: QueuePrinceton<Key>) {
+    private func inorder(_ x: Node?, _ q: Queue<Key>) {
         guard let x = x else { return }
         
         inorder(x.left, q)

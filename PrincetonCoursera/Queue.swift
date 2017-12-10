@@ -6,16 +6,16 @@
 //  Copyright © 2017 Anton Novoselov. All rights reserved.
 //
 
-class QueuePrinceton<T>: Sequence {
+class QueueNode<T> {
+    var value: T
+    var next: QueueNode?
     
-    class QueueNode<T> {
-        var value: T
-        var next: QueueNode?
-        
-        public init(value: T) {
-            self.value = value
-        }
+    public init(value: T) {
+        self.value = value
     }
+}
+
+class Queue<T>: Sequence {
     
     private var firstNode: QueueNode<T>?
     private var last: QueueNode<T>?
@@ -68,22 +68,19 @@ class QueuePrinceton<T>: Sequence {
         return ListIterator(current: firstNode)
     }
     
+}
+
+struct ListIterator<T>: IteratorProtocol {
+    var current: QueueNode<T>?
     
-    struct ListIterator<T>: IteratorProtocol {
-//        typealias Element = T
-        
-        var current: QueueNode<T>?
-        
-        public func hasNext() -> Bool {
-            return current != nil
-        }
-        
-        mutating func next() -> T? {
-            let item = current?.value
-            current = current?.next
-            return item
-        }
-        
+    public func hasNext() -> Bool {
+        return current != nil
+    }
+    
+    mutating func next() -> T? {
+        let item = current?.value
+        current = current?.next
+        return item
     }
     
 }

@@ -42,9 +42,9 @@
 		18902B7B1FD2AB79006830A5 /* RayAlgorithmsClub.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18902B731FD2AB79006830A5 /* RayAlgorithmsClub.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18902B801FD2AB8E006830A5 /* Quicksort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18902B7F1FD2AB8E006830A5 /* Quicksort.swift */; };
 		18AA03401FD3E2CC00B0E0BD /* LLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA033F1FD3E2CC00B0E0BD /* LLNode.swift */; };
-		18AA03411FD3E50600B0E0BD /* QueuePrinceton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC3A1FCAB60600ECFF31 /* QueuePrinceton.swift */; };
+		18AA03411FD3E50600B0E0BD /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC3A1FCAB60600ECFF31 /* Queue.swift */; };
 		18AA03431FD3E52800B0E0BD /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AA03421FD3E52800B0E0BD /* Node.swift */; };
-		18AA03441FD3E5AD00B0E0BD /* StackLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC291FC955DC00ECFF31 /* StackLinkedList.swift */; };
+		18AA03441FD3E5AD00B0E0BD /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC291FC955DC00ECFF31 /* Stack.swift */; };
 		18AA034E1FD3EB4200B0E0BD /* PrincetonCoursera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1843B2461FD1383900E9C7E3 /* PrincetonCoursera.framework */; };
 		18B2AC2D1FCAA5D700ECFF31 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC2C1FCAA5D700ECFF31 /* Queue.swift */; };
 		18B2AC301FCAA9CE00ECFF31 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2AC2F1FCAA9CE00ECFF31 /* Stack.swift */; };
@@ -166,13 +166,13 @@
 		18AA03421FD3E52800B0E0BD /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		18AA03491FD3EB4200B0E0BD /* PrincetonCourseraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrincetonCourseraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AA034D1FD3EB4200B0E0BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18B2AC291FC955DC00ECFF31 /* StackLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackLinkedList.swift; sourceTree = "<group>"; };
+		18B2AC291FC955DC00ECFF31 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		18B2AC2C1FCAA5D700ECFF31 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		18B2AC2F1FCAA9CE00ECFF31 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		18B2AC311FCAAE2F00ECFF31 /* StackTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTest.swift; sourceTree = "<group>"; };
 		18B2AC331FCAAFFE00ECFF31 /* StackTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTest.swift; sourceTree = "<group>"; };
 		18B2AC381FCAB50E00ECFF31 /* QueueTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueTest.swift; sourceTree = "<group>"; };
-		18B2AC3A1FCAB60600ECFF31 /* QueuePrinceton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueuePrinceton.swift; sourceTree = "<group>"; };
+		18B2AC3A1FCAB60600ECFF31 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		18C55D391FCBEBB300870A51 /* BSNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSNode.swift; sourceTree = "<group>"; };
 		18C55D3B1FCBECC700870A51 /* BSTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTree.swift; sourceTree = "<group>"; };
 		18D3291C1FD3EC6C0044B6D3 /* QueueTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueTest.swift; sourceTree = "<group>"; };
@@ -291,8 +291,8 @@
 				18F982861FDA891B00E5D631 /* MaxPQ.swift */,
 				18F982881FDB1C2F00E5D631 /* Heap.swift */,
 				18F9828A1FDC749400E5D631 /* BSTree.swift */,
-				18B2AC291FC955DC00ECFF31 /* StackLinkedList.swift */,
-				18B2AC3A1FCAB60600ECFF31 /* QueuePrinceton.swift */,
+				18B2AC291FC955DC00ECFF31 /* Stack.swift */,
+				18B2AC3A1FCAB60600ECFF31 /* Queue.swift */,
 				1843B2531FD1385A00E9C7E3 /* QuickSort.swift */,
 				1843B2491FD1383900E9C7E3 /* Info.plist */,
 			);
@@ -675,9 +675,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18AA03411FD3E50600B0E0BD /* QueuePrinceton.swift in Sources */,
+				18AA03411FD3E50600B0E0BD /* Queue.swift in Sources */,
 				18F982821FDA78C200E5D631 /* UnorderedArrayMaxPQ.swift in Sources */,
-				18AA03441FD3E5AD00B0E0BD /* StackLinkedList.swift in Sources */,
+				18AA03441FD3E5AD00B0E0BD /* Stack.swift in Sources */,
 				18F982891FDB1C2F00E5D631 /* Heap.swift in Sources */,
 				18F982871FDA891B00E5D631 /* MaxPQ.swift in Sources */,
 				18F9828B1FDC749400E5D631 /* BSTree.swift in Sources */,
