@@ -22,7 +22,7 @@
 		182C11431FCF25DB001B462A /* PathHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C11421FCF25DB001B462A /* PathHeap.swift */; };
 		182C11451FCF39CD001B462A /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C11441FCF39CD001B462A /* Heap.swift */; };
 		182C114A1FCF3BB1001B462A /* GraphTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C11481FCF3B8B001B462A /* GraphTest.swift */; };
-		1836F8791FCC9BDA00794C9D /* BSTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1836F8781FCC9BDA00794C9D /* BSTest.swift */; };
+		1836F8791FCC9BDA00794C9D /* BSTTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1836F8781FCC9BDA00794C9D /* BSTTest.swift */; };
 		1843B24D1FD1383900E9C7E3 /* PrincetonCoursera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1843B2461FD1383900E9C7E3 /* PrincetonCoursera.framework */; };
 		1843B24E1FD1383900E9C7E3 /* PrincetonCoursera.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1843B2461FD1383900E9C7E3 /* PrincetonCoursera.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1843B2541FD1385A00E9C7E3 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843B2531FD1385A00E9C7E3 /* QuickSort.swift */; };
@@ -138,7 +138,7 @@
 		182C11421FCF25DB001B462A /* PathHeap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathHeap.swift; sourceTree = "<group>"; };
 		182C11441FCF39CD001B462A /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		182C11481FCF3B8B001B462A /* GraphTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTest.swift; sourceTree = "<group>"; };
-		1836F8781FCC9BDA00794C9D /* BSTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTest.swift; sourceTree = "<group>"; };
+		1836F8781FCC9BDA00794C9D /* BSTTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTTest.swift; sourceTree = "<group>"; };
 		1843B2461FD1383900E9C7E3 /* PrincetonCoursera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PrincetonCoursera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1843B2491FD1383900E9C7E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1843B2531FD1385A00E9C7E3 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
@@ -357,7 +357,7 @@
 				182C11481FCF3B8B001B462A /* GraphTest.swift */,
 				15697DBB1FD003F500138108 /* HashTest.swift */,
 				188760B01FC8965100567042 /* TrieTest.swift */,
-				1836F8781FCC9BDA00794C9D /* BSTest.swift */,
+				1836F8781FCC9BDA00794C9D /* BSTTest.swift */,
 				18B2AC381FCAB50E00ECFF31 /* QueueTest.swift */,
 				1843B2551FD1387600E9C7E3 /* SortTest.swift */,
 				188760B21FC8984200567042 /* LinkedListTest.swift */,
@@ -728,7 +728,7 @@
 				188760B11FC8965100567042 /* TrieTest.swift in Sources */,
 				1843B25D1FD13F1800E9C7E3 /* Sortable.swift in Sources */,
 				155940741FD1647100EFBDCD /* Enums.swift in Sources */,
-				1836F8791FCC9BDA00794C9D /* BSTest.swift in Sources */,
+				1836F8791FCC9BDA00794C9D /* BSTTest.swift in Sources */,
 				182C114A1FCF3BB1001B462A /* GraphTest.swift in Sources */,
 				18B2AC341FCAAFFE00ECFF31 /* StackTest.swift in Sources */,
 				18B2AC391FCAB50E00ECFF31 /* QueueTest.swift in Sources */,

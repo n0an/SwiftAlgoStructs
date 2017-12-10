@@ -1,5 +1,5 @@
 //
-//  BSTest.swift
+//  BSTTest.swift
 //  SwiftAlgoStructsTests
 //
 //  Created by Anton Novoselov on 27/11/2017.
@@ -10,7 +10,7 @@ import XCTest
 
 @testable import SwiftAlgoStructs
 
-class BSTest: XCTestCase {
+class BSTTest: XCTestCase {
     
     override func setUp() {
         super.setUp()
