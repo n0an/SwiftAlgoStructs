@@ -6,9 +6,9 @@
 //  Copyright © 2017 Anton Novoselov. All rights reserved.
 //
 
-class QueuePrinceton<T> {
+class QueuePrinceton<T>: Sequence {
     
-    private class QueueNode<T> {
+    class QueueNode<T> {
         var value: T
         var next: QueueNode?
         
@@ -17,12 +17,12 @@ class QueuePrinceton<T> {
         }
     }
     
-    private var first: QueueNode<T>?
+    private var firstNode: QueueNode<T>?
     private var last: QueueNode<T>?
     private var counter = 0
     
     var isEmpty: Bool {
-        return first == nil
+        return firstNode == nil
     }
     
     var count: Int {
@@ -36,7 +36,7 @@ class QueuePrinceton<T> {
         last?.next = nil
         
         if isEmpty {
-            first = last
+            firstNode = last
         } else {
             oldLast?.next = last
         }
@@ -46,9 +46,9 @@ class QueuePrinceton<T> {
     
     func dequeue() -> T? {
         
-        if let item = first?.value {
+        if let item = firstNode?.value {
             
-            first = first?.next
+            firstNode = firstNode?.next
             if isEmpty {
                 last = nil
             }
@@ -61,7 +61,29 @@ class QueuePrinceton<T> {
     }
     
     public var front: T? {
-        return isEmpty ? nil : first?.value
+        return isEmpty ? nil : firstNode?.value
+    }
+    
+    func makeIterator() -> ListIterator<T> {
+        return ListIterator(current: firstNode)
+    }
+    
+    
+    struct ListIterator<T>: IteratorProtocol {
+//        typealias Element = T
+        
+        var current: QueueNode<T>?
+        
+        public func hasNext() -> Bool {
+            return current != nil
+        }
+        
+        mutating func next() -> T? {
+            let item = current?.value
+            current = current?.next
+            return item
+        }
+        
     }
     
 }

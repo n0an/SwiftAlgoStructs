@@ -12,26 +12,23 @@ public class BST<Key: Comparable, Value> {
     
     public var root: Node!
     
-//    init() {
-//        self.root = nil
-//    }
-    
-    private class Node {
+    // --- inner Node class
+    public class Node {
         public var key: Key
         public var val: Value
-        public var left: Node!
-        public var right: Node!
+        public var left: Node?
+        public var right: Node?
         
-        public var count: Int!
+        public var count: Int
         
-        init(key: Key, val: Value) {
+        init(key: Key, val: Value, count: Int) {
             self.key = key
             self.val = val
-            
+            self.count = count
         }
-        
     }
     
+    // --- Size ---
     public func size() -> Int {
         return size(root)
     }
@@ -41,13 +38,17 @@ public class BST<Key: Comparable, Value> {
         return x.count
     }
     
+    // --- Put ---
     public func put(key: Key, val: Value) {
+        // Search for key. Update value if found; grow table if new.
         root = put(root, key, val)
     }
     
     private func put(_ x: Node?, _ key: Key, _ val: Value) -> Node {
+        // Change key’s value to val if key in subtree rooted at x.
+        // Otherwise, add new node to subtree associating key with val.
         
-        guard let x = x else { return Node(key: key, val: val) }
+        guard let x = x else { return Node(key: key, val: val, count: 1) }
         
         if key < x.key {
             x.left = put(x.left, key, val)
@@ -62,26 +63,70 @@ public class BST<Key: Comparable, Value> {
         return x
     }
     
+    // --- Get ---
     public func get(key: Key) -> Value? {
-        var x = root
-        
-        while x != nil {
-            if key < (x?.key)! {
-                x = x?.left
-            } else if key < (x?.key)! {
-                x = x?.right
-            } else {
-                return x!.val
-            }
-        }
-        return nil
+        return get(root, key)
     }
     
+    private func get(_ x: Node?, _ key: Key) -> Value? {
+        // Return value associated with key in the subtree rooted at x;
+        // return nil if key not present in subtree rooted at x.
+        
+        guard let x = x else { return nil }
+        
+        if key < x.key {
+            return get(x.left, key)
+        } else if key > x.key {
+            return get(x.right, key)
+        } else {
+            return x.val
+        }
+    }
+
+//    public func get(key: Key) -> Value? {
+//        var x = root
+//
+//        while x != nil {
+//            if key < (x?.key)! {
+//                x = x?.left
+//            } else if key < (x?.key)! {
+//                x = x?.right
+//            } else {
+//                return x!.val
+//            }
+//        }
+//        return nil
+//    }
+    
+    // --- Select ---
+    public func select(_ k: Int) -> Key {
+        return select(root, k)!.key
+    }
+    
+    private func select(_ x: Node?, _ k: Int) -> Node? {
+        // Return Node containing key of rank k.
+        
+        guard let x = x else { return nil }
+        
+        let t = size(x.left)
+        
+        if t > k {
+            return select(x.left, k)
+        } else if t < k {
+            return select(x.right, k - t - 1)
+        } else {
+            return x
+        }
+    }
+    
+    // --- Rank ---
     public func rank(key: Key) -> Int {
         return rank(key: key, x: root)
     }
     
     private func rank(key: Key, x: Node?) -> Int {
+        // Return number of keys less than x.key in the subtree rooted at x.
+        
         guard let x = x else { return 0 }
         
         if key < x.key {
@@ -91,9 +136,35 @@ public class BST<Key: Comparable, Value> {
         } else {
             return size(x.left)
         }
-        
     }
     
+    // --- Min ---
+    public func min() -> Key {
+        return min(root).key
+    }
+    
+    private func min(_ x: Node) -> Node {
+        if x.left == nil {
+            return x
+        }
+        
+        return min(x.left!)
+    }
+    
+    // --- Max ---
+    public func max() -> Key {
+        return max(root).key
+    }
+    
+    private func max(_ x: Node) -> Node {
+        if x.right == nil {
+            return x
+        }
+        
+        return max(x.right!)
+    }
+    
+    // --- Floor ---
     public func floor(key: Key) -> Key? {
         guard let x = floor(root, key) else { return nil }
         
@@ -118,32 +189,36 @@ public class BST<Key: Comparable, Value> {
         }
     }
     
+    // --- Delete Min ---
     public func deleteMin() {
         root = deleteMin(root)
     }
     
     private func deleteMin(_ x: Node) -> Node {
         if x.left == nil {
-            return x.right
+            return x.right!
         }
         
-        x.left = deleteMin(x.left)
+        x.left = deleteMin(x.left!)
         x.count = 1 + size(x.left) + size(x.right)
         
         return x
     }
     
+    // --- Hibbard deletion ---
     public func delete(key: Key) {
         root = delete(root, key)
     }
     
     private func delete(_ x: Node?, _ key: Key) -> Node? {
-        guard let x = x else { return nil }
+        guard var x = x else { return nil }
         
         if key < x.key {  // search for key
             x.left = delete(x.left, key)
+            
         } else if key > x.key {
             x.right = delete(x.right, key)
+            
         } else {
             if x.right == nil { // no right child
                 return x.left
@@ -154,8 +229,8 @@ public class BST<Key: Comparable, Value> {
             }
             
             let t = x
-            x = min(t.right) // replace with successor
-            x.right = deleteMin(t.right)
+            x = min(t.right!) // replace with successor
+            x.right = deleteMin(t.right!)
             x.left = t.left
         }
         
@@ -163,9 +238,50 @@ public class BST<Key: Comparable, Value> {
         return x
     }
     
-    public func getIterator() {
+    // --- Print ---
+    // Printing the keys in a BST in order
+    public func printOut(_ x: Node?) {
+        guard let x = x else { return }
+        
+        printOut(x.left)
+        
+        print(x.key)
+        
+        printOut(x.right)
+    }
+    
+    
+    
+    // --- Iterator 1
+    func makeIterator() -> QueuePrinceton<Key> {
+        return keys(min(), max())
+        
+    }
+    
+    func keys(_ lo: Key, _ hi: Key) -> QueuePrinceton<Key> {
+        let queue = QueuePrinceton<Key>()
+        keys(root, queue, lo, hi)
+        return queue
+    }
+    
+    private func keys(_ x: Node?, _ queue: QueuePrinceton<Key>, _ lo: Key, _ hi: Key) {
+        guard let x = x else { return }
+        if lo < x.key {
+            keys(x.left, queue, lo, hi)
+        }
+        if lo < x.key && hi >= x.key {
+            queue.enqueue(item: x.key)
+        }
+        if hi > x.key {
+            keys(x.right, queue, lo, hi)
+        }
+    }
+    
+    // --- Iterator 2
+    private func getIterator() -> QueuePrinceton<Key> {
         let q = QueuePrinceton<Key>()
         inorder(root, q)
+        return q
     }
     
     private func inorder(_ x: Node?, _ q: QueuePrinceton<Key>) {
@@ -180,6 +296,67 @@ public class BST<Key: Comparable, Value> {
 }
 
 
+
+/*
+struct Whatevers<T> {
+    let whatevers: [T]
+}
+
+extension Whatevers: Sequence {
+    
+    func makeIterator() -> WhateversIterator<T> {
+        return WhateversIterator(sequence: whatevers, current: 0)
+    }
+}
+
+
+struct WhateversIterator<T>: IteratorProtocol {
+    let sequence: [T]
+    var current = 0
+    
+    mutating func next() -> T? {
+        defer { current += 1 }
+        return sequence.count > current ? sequence[current] : nil
+    }
+}
+ 169
+427
+ 
+ 
+ 
+ 
+ public Iterable<Key> keys()
+ {
+ Queue<Key> q = new Queue<Key>();
+ inorder(root, q);
+ return q;
+ }
+ private void inorder(Node x, Queue<Key> q)
+ {
+ if (x == null) return;
+ inorder(x.left, q);
+ q.enqueue(x.key);
+ inorder(x.right, q);
+ }
+ 
+ public Iterable<Key> keys()
+ {  return keys(min(), max());  }
+ public Iterable<Key> keys(Key lo, Key hi)
+ {
+ Queue<Key> queue = new Queue<Key>();
+ keys(root, queue, lo, hi);
+ return queue;
+ }
+ private void keys(Node x, Queue<Key> queue, Key lo, Key hi)
+ {
+ if (x == null) return;
+ int cmplo = lo.compareTo(x.key);
+ int cmphi = hi.compareTo(x.key);
+ if (cmplo < 0) keys(x.left, queue, lo, hi);
+ if (cmplo <= 0 && cmphi >= 0) queue.enqueue(x.key);
+ if (cmphi > 0) keys(x.right, queue, lo, hi);
+ }
+*/
 
 
 
