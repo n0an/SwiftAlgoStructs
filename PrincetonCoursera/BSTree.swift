@@ -245,7 +245,7 @@ public class BST<Key: Comparable, Value> {
         
         printOut(x.left)
         
-        print(x.key)
+        print("key, val = \(x.key, x.val)")
         
         printOut(x.right)
     }
@@ -278,7 +278,7 @@ public class BST<Key: Comparable, Value> {
     }
     
     // --- Iterator 2
-    private func getIterator() -> Queue<Key> {
+    func getIterator() -> Queue<Key> {
         let q = Queue<Key>()
         inorder(root, q)
         return q

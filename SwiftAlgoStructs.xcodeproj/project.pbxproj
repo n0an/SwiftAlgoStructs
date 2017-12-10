@@ -66,6 +66,7 @@
 		18F982871FDA891B00E5D631 /* MaxPQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F982861FDA891B00E5D631 /* MaxPQ.swift */; };
 		18F982891FDB1C2F00E5D631 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F982881FDB1C2F00E5D631 /* Heap.swift */; };
 		18F9828B1FDC749400E5D631 /* BSTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9828A1FDC749400E5D631 /* BSTree.swift */; };
+		18F9828D1FDDB2E700E5D631 /* BSTTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9828C1FDDB2E700E5D631 /* BSTTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,6 +184,7 @@
 		18F982861FDA891B00E5D631 /* MaxPQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxPQ.swift; sourceTree = "<group>"; };
 		18F982881FDB1C2F00E5D631 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		18F9828A1FDC749400E5D631 /* BSTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTree.swift; sourceTree = "<group>"; };
+		18F9828C1FDDB2E700E5D631 /* BSTTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -378,6 +380,7 @@
 			isa = PBXGroup;
 			children = (
 				18D3291C1FD3EC6C0044B6D3 /* QueueTest.swift */,
+				18F9828C1FDDB2E700E5D631 /* BSTTest.swift */,
 				18F982831FDA7BF900E5D631 /* PriorityQueueTest.swift */,
 				18B2AC311FCAAE2F00ECFF31 /* StackTest.swift */,
 				1843B2571FD13DE800E9C7E3 /* SortTest.swift */,
@@ -750,6 +753,7 @@
 				18D329231FD3ECC70044B6D3 /* Enums.swift in Sources */,
 				18D3291D1FD3EC6C0044B6D3 /* QueueTest.swift in Sources */,
 				18F982851FDA80CA00E5D631 /* StackTest.swift in Sources */,
+				18F9828D1FDDB2E700E5D631 /* BSTTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
