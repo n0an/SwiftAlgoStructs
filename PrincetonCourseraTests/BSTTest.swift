@@ -128,10 +128,7 @@ class BSTTest: XCTestCase {
     }
     
     func testBSTIterator() {
-        
-        let iterator = bst.getIterator()
-        
-        for elem in iterator {
+        for elem in bst {
             print(elem)
         }
     }

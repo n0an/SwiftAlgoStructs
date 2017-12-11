@@ -253,7 +253,7 @@ public class BST<Key: Comparable, Value> {
     }
     
     // --- Iterator 1
-    func makeIterator() -> Queue<Key> {
+    func makeIteratorCustom() -> Queue<Key> {
         return keys(min(), max())
         
     }
@@ -293,9 +293,26 @@ public class BST<Key: Comparable, Value> {
         
         inorder(x.right, q)
     }
+    
+    private var innerQueue: Queue<Key>? = nil
 }
 
-
-
-
+// MARK: - Iterator
+extension BST: Sequence, IteratorProtocol {
+    
+    public typealias Element = Key
+    
+    public func next() -> Key? {
+        
+        if let innerQueue = innerQueue {
+            return innerQueue.dequeue()
+            
+        } else {
+            innerQueue = getIterator()
+//            innerQueue = makeIteratorCustom()
+        }
+        
+        return innerQueue?.dequeue()
+    }
+}
 
