@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150280371FF6354D00506592 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150280361FF6354D00506592 /* Graph.swift */; };
+		150280391FF63B8F00506592 /* DepthFirstPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150280381FF63B8F00506592 /* DepthFirstPaths.swift */; };
+		1502803B1FF63F4A00506592 /* BreadthFirstPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502803A1FF63F4A00506592 /* BreadthFirstPaths.swift */; };
+		1502803E1FF6512400506592 /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502803D1FF6512400506592 /* Bag.swift */; };
+		150280401FF661F300506592 /* ConnectedComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502803F1FF661F300506592 /* ConnectedComponents.swift */; };
 		155940701FD14EAF00EFBDCD /* Keyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1559406F1FD14EAF00EFBDCD /* Keyable.swift */; };
 		155940741FD1647100EFBDCD /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155940731FD1647100EFBDCD /* Enums.swift */; };
 		15697DB61FCFF6B100138108 /* HashNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15697DB51FCFF6B100138108 /* HashNode.swift */; };
@@ -124,6 +129,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		150280361FF6354D00506592 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		150280381FF63B8F00506592 /* DepthFirstPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthFirstPaths.swift; sourceTree = "<group>"; };
+		1502803A1FF63F4A00506592 /* BreadthFirstPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreadthFirstPaths.swift; sourceTree = "<group>"; };
+		1502803D1FF6512400506592 /* Bag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bag.swift; sourceTree = "<group>"; };
+		1502803F1FF661F300506592 /* ConnectedComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectedComponents.swift; sourceTree = "<group>"; };
 		1559406F1FD14EAF00EFBDCD /* Keyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyable.swift; sourceTree = "<group>"; };
 		155940731FD1647100EFBDCD /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		15697DB51FCFF6B100138108 /* HashNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashNode.swift; sourceTree = "<group>"; };
@@ -239,6 +249,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1502803C1FF63F5800506592 /* Graphs */ = {
+			isa = PBXGroup;
+			children = (
+				150280361FF6354D00506592 /* Graph.swift */,
+				150280381FF63B8F00506592 /* DepthFirstPaths.swift */,
+				1502803F1FF661F300506592 /* ConnectedComponents.swift */,
+				1502803A1FF63F4A00506592 /* BreadthFirstPaths.swift */,
+			);
+			path = Graphs;
+			sourceTree = "<group>";
+		};
 		1559406E1FD14E9800EFBDCD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,8 +317,10 @@
 				18F982881FDB1C2F00E5D631 /* Heap.swift */,
 				18F9828A1FDC749400E5D631 /* BSTree.swift */,
 				18B2AC291FC955DC00ECFF31 /* Stack.swift */,
+				1502803D1FF6512400506592 /* Bag.swift */,
 				18B2AC3A1FCAB60600ECFF31 /* Queue.swift */,
 				1843B2531FD1385A00E9C7E3 /* QuickSort.swift */,
+				1502803C1FF63F5800506592 /* Graphs */,
 				1843B2491FD1383900E9C7E3 /* Info.plist */,
 			);
 			path = PrincetonCoursera;
@@ -681,8 +704,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				150280371FF6354D00506592 /* Graph.swift in Sources */,
 				18AA03411FD3E50600B0E0BD /* Queue.swift in Sources */,
+				1502803E1FF6512400506592 /* Bag.swift in Sources */,
+				150280391FF63B8F00506592 /* DepthFirstPaths.swift in Sources */,
 				18F982821FDA78C200E5D631 /* UnorderedArrayMaxPQ.swift in Sources */,
+				150280401FF661F300506592 /* ConnectedComponents.swift in Sources */,
+				1502803B1FF63F4A00506592 /* BreadthFirstPaths.swift in Sources */,
 				18AA03441FD3E5AD00B0E0BD /* Stack.swift in Sources */,
 				18F982891FDB1C2F00E5D631 /* Heap.swift in Sources */,
 				18F982871FDA891B00E5D631 /* MaxPQ.swift in Sources */,

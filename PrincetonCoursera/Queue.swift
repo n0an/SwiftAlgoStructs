@@ -67,7 +67,6 @@ class Queue<T>: Sequence {
     func makeIterator() -> ListIterator<T> {
         return ListIterator(current: firstNode)
     }
-    
 }
 
 struct ListIterator<T>: IteratorProtocol {
@@ -82,5 +81,4 @@ struct ListIterator<T>: IteratorProtocol {
         current = current?.next
         return item
     }
-    
 }
