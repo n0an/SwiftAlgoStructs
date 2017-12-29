@@ -1,5 +1,5 @@
 //
-//  Graph.swift
+//  Digraph.swift
 //  PrincetonCoursera
 //
 //  Created by nag on 29/12/2017.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Graph {
+class Digraph {
     private var verticesNumber: Int
     private var edgesNumber: Int
     
@@ -27,16 +27,11 @@ class Graph {
         self.edgesNumber = 0
         
         self.adjacencyList = Array<Bag<Int>>(repeating: Bag<Int>(), count: verticesNumber)
-
-//        for index in 0 ..< verticesNumber {
-//            adjacencyList[index] = Bag<Int>()
-//        }
         
     }
     
     public func addEdge(v: Int, w: Int) {
         adjacencyList[v].add(item: w)
-        adjacencyList[w].add(item: v)
         edgesNumber += 1
     }
     
@@ -44,4 +39,15 @@ class Graph {
         return adjacencyList[v]
     }
     
+    public func reverse() -> Digraph {
+        let reversed = Digraph(verticesNumber: self.verticesNumber)
+        
+        for v in 0 ..< self.verticesNumber {
+            for w in adjacencyList[v] {
+                reversed.addEdge(v: w, w: v)
+            }
+        }
+        
+        return reversed
+    }
 }

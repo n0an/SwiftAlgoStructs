@@ -12,6 +12,8 @@
 		1502803B1FF63F4A00506592 /* BreadthFirstPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502803A1FF63F4A00506592 /* BreadthFirstPaths.swift */; };
 		1502803E1FF6512400506592 /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502803D1FF6512400506592 /* Bag.swift */; };
 		150280401FF661F300506592 /* ConnectedComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502803F1FF661F300506592 /* ConnectedComponents.swift */; };
+		150280421FF6642600506592 /* Digraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150280411FF6642600506592 /* Digraph.swift */; };
+		150280451FF66AC400506592 /* DirectedDFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150280441FF66AC400506592 /* DirectedDFS.swift */; };
 		155940701FD14EAF00EFBDCD /* Keyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1559406F1FD14EAF00EFBDCD /* Keyable.swift */; };
 		155940741FD1647100EFBDCD /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155940731FD1647100EFBDCD /* Enums.swift */; };
 		15697DB61FCFF6B100138108 /* HashNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15697DB51FCFF6B100138108 /* HashNode.swift */; };
@@ -134,6 +136,8 @@
 		1502803A1FF63F4A00506592 /* BreadthFirstPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreadthFirstPaths.swift; sourceTree = "<group>"; };
 		1502803D1FF6512400506592 /* Bag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bag.swift; sourceTree = "<group>"; };
 		1502803F1FF661F300506592 /* ConnectedComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectedComponents.swift; sourceTree = "<group>"; };
+		150280411FF6642600506592 /* Digraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digraph.swift; sourceTree = "<group>"; };
+		150280441FF66AC400506592 /* DirectedDFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectedDFS.swift; sourceTree = "<group>"; };
 		1559406F1FD14EAF00EFBDCD /* Keyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyable.swift; sourceTree = "<group>"; };
 		155940731FD1647100EFBDCD /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		15697DB51FCFF6B100138108 /* HashNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashNode.swift; sourceTree = "<group>"; };
@@ -254,10 +258,19 @@
 			children = (
 				150280361FF6354D00506592 /* Graph.swift */,
 				150280381FF63B8F00506592 /* DepthFirstPaths.swift */,
+				150280441FF66AC400506592 /* DirectedDFS.swift */,
 				1502803F1FF661F300506592 /* ConnectedComponents.swift */,
 				1502803A1FF63F4A00506592 /* BreadthFirstPaths.swift */,
 			);
 			path = Graphs;
+			sourceTree = "<group>";
+		};
+		150280431FF66A7700506592 /* Digraphs */ = {
+			isa = PBXGroup;
+			children = (
+				150280411FF6642600506592 /* Digraph.swift */,
+			);
+			path = Digraphs;
 			sourceTree = "<group>";
 		};
 		1559406E1FD14E9800EFBDCD /* Extensions */ = {
@@ -320,6 +333,7 @@
 				1502803D1FF6512400506592 /* Bag.swift */,
 				18B2AC3A1FCAB60600ECFF31 /* Queue.swift */,
 				1843B2531FD1385A00E9C7E3 /* QuickSort.swift */,
+				150280431FF66A7700506592 /* Digraphs */,
 				1502803C1FF63F5800506592 /* Graphs */,
 				1843B2491FD1383900E9C7E3 /* Info.plist */,
 			);
@@ -713,7 +727,9 @@
 				1502803B1FF63F4A00506592 /* BreadthFirstPaths.swift in Sources */,
 				18AA03441FD3E5AD00B0E0BD /* Stack.swift in Sources */,
 				18F982891FDB1C2F00E5D631 /* Heap.swift in Sources */,
+				150280451FF66AC400506592 /* DirectedDFS.swift in Sources */,
 				18F982871FDA891B00E5D631 /* MaxPQ.swift in Sources */,
+				150280421FF6642600506592 /* Digraph.swift in Sources */,
 				18F9828B1FDC749400E5D631 /* BSTree.swift in Sources */,
 				1843B2541FD1385A00E9C7E3 /* QuickSort.swift in Sources */,
 			);
